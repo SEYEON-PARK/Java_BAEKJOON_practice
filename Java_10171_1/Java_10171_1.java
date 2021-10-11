@@ -6,8 +6,8 @@
 고양이를 출력한다.
 */
 
-class Main{
-    public static void main(String args[]){
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소
         System.out.println("\\    /\\");
         System.out.println(" )  ( \')");
         System.out.println("(  /  )");

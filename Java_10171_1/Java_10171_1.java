@@ -8,9 +8,9 @@
 
 class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
-        System.out.println("\\    /\\");
-        System.out.println(" )  ( \')");
-        System.out.println("(  /  )");
-        System.out.println(" \\(__)|");        
+        System.out.println("\\    /\\"); // 출력하기
+        System.out.println(" )  ( \')"); // 출력하기
+        System.out.println("(  /  )"); // 출력하기
+        System.out.println(" \\(__)|"); // 출력하기
     }
 }

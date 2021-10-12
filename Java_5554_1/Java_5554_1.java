@@ -15,3 +15,20 @@
 */
 
 
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner one = new Scanner(System.in);
+        int a=one.nextInt();
+        int b=one.nextInt();
+        int c=one.nextInt();
+        int d=one.nextInt();
+        
+        int sum=a+b+c+d;
+        System.out.println(sum/60);
+        System.out.println(sum%60);
+        
+        one.close();
+    }
+}

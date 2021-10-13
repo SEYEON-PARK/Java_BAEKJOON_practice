@@ -15,7 +15,7 @@
 */
 
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해서 
 
 class Main{
     public static void main(String args[]){

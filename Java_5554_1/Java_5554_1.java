@@ -17,18 +17,18 @@
 
 import java.util.*; // 스캐너를 사용하기 위해서
 
-class Main{
-    public static void main(String args[]){
-        Scanner one = new Scanner(System.in);
-        int a=one.nextInt();
-        int b=one.nextInt();
-        int c=one.nextInt();
-        int d=one.nextInt();
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner one = new Scanner(System.in); // 스캐너 one 생성
+        int a=one.nextInt(); // 사용자로부터 정수(집에서 학교까지의 이동 시간) 입력받기
+        int b=one.nextInt(); // 사용자로부터 정수(학교에서 PC방까지의 이동 시간) 입력받기
+        int c=one.nextInt(); // 사용자로부터 정수(PC방에서 학원까지의 이동 시간) 입력받기
+        int d=one.nextInt(); // 사용자로부터 정수(학원에서 집까지의 이동 시간) 입력받기
         
-        int sum=a+b+c+d;
-        System.out.println(sum/60);
-        System.out.println(sum%60);
+        int sum=a+b+c+d; // sum에 a+b+c+d 대입하기
+        System.out.println(sum/60); // 분 출력하기
+        System.out.println(sum%60); // 초 출력하기
         
-        one.close();
+        one.close(); // 스캐너 one 종료하기
     }
 }

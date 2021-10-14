@@ -6,3 +6,26 @@
 
 첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int N = s.nextInt();
+        int count=1;
+        
+        for(int i=0;i<N;i++){
+            for(int k=N-count;k>0;k--){
+                System.out.print(" ");
+            }
+            for(int j=0;j<count;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+            count++;
+        }
+        
+        s.close();
+    }
+}

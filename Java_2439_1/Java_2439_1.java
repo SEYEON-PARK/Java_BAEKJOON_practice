@@ -19,13 +19,13 @@ class Main{ // Main 클래스
             for(int k=N-count;k>0;k--){ // k가 N-count부터 0보다 클 때까지 1씩 감소하며 반복
                 System.out.print(" "); // 공백 출력하기
             }
-            for(int j=0;j<count;j++){
-                System.out.print("*");
+            for(int j=0;j<count;j++){ // int j가 0부터 count보다 작을 때까지 1씩 증가하며 반복
+                System.out.print("*"); // 별 출력하기
             }
-            System.out.println();
-            count++;
+            System.out.println(); // 한 줄 띄기
+            count++; // count에 1 더하기
         }
         
-        s.close();
+        s.close(); // 스캐너 s 종료하기
     }
 }

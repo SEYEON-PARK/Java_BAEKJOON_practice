@@ -15,9 +15,9 @@ class Main{ // Main 클래스
         int N = s.nextInt(); // 사용자로부터 정수 입력받기
         int count=1; // 변수 count 정의 및 초기화 
         
-        for(int i=0;i<N;i++){
-            for(int k=N-count;k>0;k--){
-                System.out.print(" ");
+        for(int i=0;i<N;i++){ // int i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
+            for(int k=N-count;k>0;k--){ // k가 N-count부터 0보다 클 때까지 1씩 감소하며 반복
+                System.out.print(" "); // 공백 출력하기
             }
             for(int j=0;j<count;j++){
                 System.out.print("*");

@@ -10,3 +10,31 @@
 문제에서 요구하는 정답을 출력한다.
 */
 
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner one = new Scanner(System.in);
+        int a, b, c, d, e, f, g, h, S, T;
+        a=one.nextInt();
+        b=one.nextInt();
+        c=one.nextInt();
+        d=one.nextInt();
+        S=a+b+c+d;
+        
+        e=one.nextInt();
+        f=one.nextInt();
+        g=one.nextInt();
+        h=one.nextInt();
+        T=e+f+g+h;
+        
+        if(S>=T){
+            System.out.println(S);
+        }
+        else{
+            System.out.println(T);
+        }
+        
+        one.close();
+    }
+}

@@ -10,12 +10,12 @@
 문제에서 요구하는 정답을 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner one = new Scanner(System.in);
-        int a, b, c, d, e, f, g, h, S, T;
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner one = new Scanner(System.in); // 스캐너 one 생성
+        int a, b, c, d, e, f, g, h, S, T; // 변수 선언
         a=one.nextInt();
         b=one.nextInt();
         c=one.nextInt();

@@ -16,7 +16,7 @@ class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner one = new Scanner(System.in); // 스캐너 one 생성
         int a, b, c, d, e, f, g, h, S, T; // 변수 선언
-        a=one.nextInt();
+        a=one.nextInt(); // 사용자로부터 정수(민국이의 정보 과목 점수) 입력받기
         b=one.nextInt();
         c=one.nextInt();
         d=one.nextInt();
@@ -28,10 +28,10 @@ class Main{ // Main 클래스
         h=one.nextInt();
         T=e+f+g+h;
         
-        if(S>=T){
+        if(S>=T){ // 만약, S(민국이의 총점)가 T(만세의 총점)보다 크거나 같다면
             System.out.println(S);
         }
-        else{
+        else{ // 
             System.out.println(T);
         }
         

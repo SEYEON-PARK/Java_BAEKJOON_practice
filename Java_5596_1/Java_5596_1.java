@@ -17,24 +17,24 @@ class Main{ // Main 클래스
         Scanner one = new Scanner(System.in); // 스캐너 one 생성
         int a, b, c, d, e, f, g, h, S, T; // 변수 선언
         a=one.nextInt(); // 사용자로부터 정수(민국이의 정보 과목 점수) 입력받기
-        b=one.nextInt();
-        c=one.nextInt();
-        d=one.nextInt();
-        S=a+b+c+d;
+        b=one.nextInt(); // 사용자로부터 정수(민국이의 수학 과목 점수) 입력받기
+        c=one.nextInt(); // 사용자로부터 정수(민국이의 과학 과목 점수) 입력받기
+        d=one.nextInt(); // 사용자로부터 정수(민국이의 영어 과목 점수) 입력받기
+        S=a+b+c+d; // S에 a+b+c+d 값을 대입하기
         
-        e=one.nextInt();
-        f=one.nextInt();
-        g=one.nextInt();
-        h=one.nextInt();
-        T=e+f+g+h;
+        e=one.nextInt(); // 사용자로부터 정수(만세의 정보 과목 점수) 입력받기
+        f=one.nextInt(); // 사용자로부터 정수(만세의 수학 과목 점수) 입력받기
+        g=one.nextInt(); // 사용자로부터 정수(만세의 과학 과목 점수) 입력받기
+        h=one.nextInt(); // 사용자로부터 정수(만세의 영어 과목 점수) 입력받기
+        T=e+f+g+h; // T에 e+f+g+h 값을 대입하기
         
         if(S>=T){ // 만약, S(민국이의 총점)가 T(만세의 총점)보다 크거나 같다면
-            System.out.println(S);
+            System.out.println(S); // S(민국이의 총점) 출력하기
         }
-        else{ // 
-            System.out.println(T);
+        else{ // S(민국이의 총점)가 T(만세의 총점)보다 크거나 같지 않다면(작다면)
+            System.out.println(T); // T(만세의 총점) 출력하기
         }
         
-        one.close();
+        one.close(); // 스캐너 one 종료하기
     }
 }

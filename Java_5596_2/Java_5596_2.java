@@ -13,14 +13,14 @@
 import java.util.*; // 스캐너를 사용하기 위해
 
 class Main{ // Main 클래스
-    public static void main(String args[]){
-        Scanner one = new Scanner(System.in);
-        int s[], t[], S=0, T=0;
-        s=new int [4];
-        t=new int [4];
+    public static void main(String args[]){ // main 메소드
+        Scanner one = new Scanner(System.in); // 스캐너 one 생성
+        int s[], t[], S=0, T=0; // 배열 선언, 변수 선언 및 초기화
+        s=new int [4]; // 배열 구체적으로 만들기
+        t=new int [4]; // 배열 구체적으로 만들기
         
-        for(int i=0;i<4;i++){
-            s[i]=one.nextInt();
+        for(int i=0;i<4;i++){ // i가 0부터 4가 되기 전까지 1씩 증가하며 반복
+            s[i]=one.nextInt(); // 사용자로부터 정수 입력받기
             S+=s[i];
         }
         

@@ -10,9 +10,9 @@
 문제에서 요구하는 정답을 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
+class Main{ // Main 클래스
     public static void main(String args[]){
         Scanner one = new Scanner(System.in);
         int s[], t[], S=0, T=0;

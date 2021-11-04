@@ -20,22 +20,22 @@ class Main{ // Main 클래스
         t=new int [4]; // 배열 구체적으로 만들기
         
         for(int i=0;i<4;i++){ // i가 0부터 4가 되기 전까지 1씩 증가하며 반복
-            s[i]=one.nextInt(); // 사용자로부터 정수 입력받기
-            S+=s[i];
+            s[i]=one.nextInt(); // 사용자로부터 정수(민국이의 점수) 입력받기
+            S+=s[i]; // S에 S+s[i] 대입하기 
         }
         
-        for(int i=0;i<4;i++){
-            t[i]=one.nextInt();
-            T+=t[i];
+        for(int i=0;i<4;i++){ // i가 0부터 4가 되기 전까지 1씩 증가하며 반복
+            t[i]=one.nextInt(); // 사용자로부터 정수(만세의 점수) 입력받기
+            T+=t[i]; // T에 T+t[i] 대입하기 
         }
         
-        if(S>=T){
-            System.out.println(S);
+        if(S>=T){ // 만약, S가 T보다 크거나 같다면
+            System.out.println(S); // S(민국이의 총점)의 값 출력하기
         }
-        else{
-            System.out.println(T);
+        else{ // S가 T보다 크거나 같지 않으면(작다면)
+            System.out.println(T); // T(만세의 총점)의 값 출력하기
         }
         
-        one.close();
+        one.close(); // 스캐너 one 종료하기
     }
 }

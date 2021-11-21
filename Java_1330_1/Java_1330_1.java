@@ -9,3 +9,25 @@
    -A와 B가 같은 경우에는 '=='를 출력한다.
 */
 
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner one = new Scanner(System.in);
+        int A, B;
+        A=one.nextInt();
+        B=one.nextInt();
+        
+        if(A>B){
+            System.out.println(">");
+        }
+        else if(A<B){
+            System.out.println("<");
+        }
+        else{
+            System.out.println("==");
+        }
+        
+        one.close();
+    }
+}

@@ -9,12 +9,12 @@
    -A와 B가 같은 경우에는 '=='를 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner one = new Scanner(System.in);
-        int A, B;
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner one = new Scanner(System.in); // 스캐너 one 생성하기
+        int A, B; // 변수 생성
         A=one.nextInt();
         B=one.nextInt();
         

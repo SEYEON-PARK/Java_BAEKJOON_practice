@@ -16,18 +16,18 @@ class Main{ // Main 클래스
         Scanner one = new Scanner(System.in); // 스캐너 one 생성하기
         int A, B; // 변수 생성
         A=one.nextInt(); // 사용자로부터 정수 입력받기
-        B=one.nextInt();
+        B=one.nextInt(); // 사용자로부터 정수 입력받기
         
         if(A>B){ // 만약, A가 B보다 크다면
             System.out.println(">"); // ">" 출력하기
         }
-        else if(A<B){
-            System.out.println("<");
+        else if(A<B){ // 만약, A가 B보다 크지 않고 A가 B보다 작다면
+            System.out.println("<"); // "<" 출력하기
         }
-        else{
-            System.out.println("==");
+        else{ // A가 B보다 크지 않고 A가 B보다 작지도 않다면
+            System.out.println("=="); // "==" 출력하기
         }
         
-        one.close();
+        one.close(); // 스캐너 one 닫기
     }
 }

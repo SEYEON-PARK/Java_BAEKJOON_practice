@@ -15,11 +15,11 @@ class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner one = new Scanner(System.in); // 스캐너 one 생성하기
         int A, B; // 변수 생성
-        A=one.nextInt();
+        A=one.nextInt(); // 사용자로부터 정수 입력받기
         B=one.nextInt();
         
-        if(A>B){
-            System.out.println(">");
+        if(A>B){ // 만약, A가 B보다 크다면
+            System.out.println(">"); // ">" 출력하기
         }
         else if(A<B){
             System.out.println("<");

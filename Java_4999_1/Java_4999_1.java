@@ -22,18 +22,18 @@ class Main{ // Main 클래스
         char [] d=a.next().toCharArray();
         int j_num=0, d_num=0; // 정수 선언 및 초기화
         
-        for(int i=0;j[i]!='h';i++){
-            j_num++;
+        for(int i=0;j[i]!='h';i++){ // i가 0부터 j[i]가 'h'가 아닐 때까지 i가 1씩 증가하며 반복
+            j_num++; // j_num에 1 더하기
         }
         
         for(int i=0;d[i]!='h';i++){
             d_num++;
         }
         
-        if(j_num>=d_num){
-            System.out.println("go");
+        if(j_num>=d_num){ // 만약, j_num이 d_num보다 크거나 같다면
+            System.out.println("go"); // "go" 출력하기
         }
-        else{
+        else{ // 
             System.out.println("no");
         }
         

@@ -19,24 +19,24 @@ class Main{ // Main 클래스
         Scanner a=new Scanner(System.in); // 스캐너 a 생성
         
         char [] j=a.next().toCharArray(); // 사용자로부터 문자열을 입력받아 char형 배열 j에 저장
-        char [] d=a.next().toCharArray();
+        char [] d=a.next().toCharArray(); // 사용자로부터 문자열을 입력받아 char형 배열 d에 저장
         int j_num=0, d_num=0; // 정수 선언 및 초기화
         
-        for(int i=0;j[i]!='h';i++){ // i가 0부터 j[i]가 'h'가 아닐 때까지 i가 1씩 증가하며 반복
+        for(int i=0;j[i]!='h';i++){ // i가 0부터 j[i]가 'h'가 아닐 때까지 1씩 증가하며 반복
             j_num++; // j_num에 1 더하기
         }
         
-        for(int i=0;d[i]!='h';i++){
-            d_num++;
+        for(int i=0;d[i]!='h';i++){ // i가 0부터 d[i]가 'h'가 아닐 때까지 1씩 증가하며 반복
+            d_num++; // d_num에 1 더하기
         }
         
         if(j_num>=d_num){ // 만약, j_num이 d_num보다 크거나 같다면
             System.out.println("go"); // "go" 출력하기
         }
-        else{ // 
-            System.out.println("no");
+        else{ // j_num이 d_num보다 크거나 같지 않다면(작다면)
+            System.out.println("no"); // "no" 출력하기
         }
         
-        a.close();
+        a.close(); // 스캐너 a 닫기
     }
 }

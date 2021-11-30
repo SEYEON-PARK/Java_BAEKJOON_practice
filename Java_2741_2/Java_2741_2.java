@@ -6,3 +6,17 @@
 첫째 줄부터 N번째 줄 까지 차례대로 출력한다.
 */
 
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        int N=s.nextInt();
+        
+        for(int i=1;i<=N;i++){
+            System.out.println(i);
+        }
+        
+        s.close();
+    }
+}

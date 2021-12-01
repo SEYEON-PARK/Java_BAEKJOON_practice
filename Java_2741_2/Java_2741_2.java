@@ -6,12 +6,12 @@
 첫째 줄부터 N번째 줄 까지 차례대로 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner s=new Scanner(System.in);
-        int N=s.nextInt();
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner s=new Scanner(System.in); // 스캐너 s 생성
+        int N=s.nextInt(); // 사용자로부터 정수 입력받기
         
         for(int i=1;i<=N;i++){
             System.out.println(i);

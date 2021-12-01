@@ -13,7 +13,7 @@ class Main{ // Main 클래스
         Scanner s=new Scanner(System.in); // 스캐너 s 생성
         int N=s.nextInt(); // 사용자로부터 정수 입력받기
         
-        for(int i=1;i<=N;i++){
+        for(int i=1;i<=N;i++){ // i가 1부터 N과 같거나 작을 때까지 1씩 증가하며 반복
             System.out.println(i);
         }
         

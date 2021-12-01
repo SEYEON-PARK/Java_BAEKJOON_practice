@@ -14,9 +14,9 @@ class Main{ // Main 클래스
         int N=s.nextInt(); // 사용자로부터 정수 입력받기
         
         for(int i=1;i<=N;i++){ // i가 1부터 N과 같거나 작을 때까지 1씩 증가하며 반복
-            System.out.println(i);
+            System.out.println(i); // 결과 출력하기
         }
         
-        s.close();
+        s.close(); // 스캐너 s 닫기
     }
 }

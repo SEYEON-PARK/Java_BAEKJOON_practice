@@ -5,3 +5,17 @@ N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하�
 
 출력형식과 같게 N*1부터 N*9까지 출력한다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String args []){
+        Scanner a = new Scanner(System.in);
+        int num=a.nextInt();
+        for(int i=1;i<10;i++){
+            System.out.println(num + " * " + i + " = " + num*i);
+        }
+        
+        a.close();
+    }
+}

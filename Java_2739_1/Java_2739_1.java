@@ -13,9 +13,9 @@ class Main{ // Main 클래스
         Scanner a = new Scanner(System.in); // 스캐너 a 생성
         int num=a.nextInt(); // 사용자로부터 정수 입력받기
         for(int i=1;i<10;i++){ // i가 1부터 10보다 작을 때까지 1씩 증가하며 반복
-            System.out.println(num + " * " + i + " = " + num*i); 
+            System.out.println(num + " * " + i + " = " + num*i); // 형식에 맞게 구구단 출력하기
         }
         
-        a.close();
+        a.close(); // 스캐너 a 종료하기
     }
 }

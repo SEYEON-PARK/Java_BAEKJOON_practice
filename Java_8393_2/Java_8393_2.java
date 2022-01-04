@@ -6,12 +6,12 @@ n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성�
 1부터 n까지 합을 출력한다.
 */
 
-import java.util.Scanner;
+import java.util.Scanner; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-       Scanner a=new Scanner(System.in);
-       int N=a.nextInt();
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+       Scanner a=new Scanner(System.in); // 새로운 스캐너 a 생성하기
+       int N=a.nextInt(); // 사용자로부터 정수 입력받기
        int sum=0;
         
        for (int i=1;i<=N;i++){

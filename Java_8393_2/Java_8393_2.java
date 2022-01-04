@@ -12,13 +12,13 @@ class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
        Scanner a=new Scanner(System.in); // 새로운 스캐너 a 생성하기
        int N=a.nextInt(); // 사용자로부터 정수 입력받기
-       int sum=0;
+       int sum=0; // 정수 선언 및 초기화
         
-       for (int i=1;i<=N;i++){
-           sum+=i;
+       for (int i=1;i<=N;i++){ // 
+           sum+=i; // sum에 sum+i 대입하기
        }
         
-       System.out.println(sum);
+       System.out.println(sum); // 결과 출력하기
         
        a.close();
     }

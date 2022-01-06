@@ -6,7 +6,7 @@ n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성�
 1부터 n까지 합을 출력한다.
 */
 
-import java.util.Scanner;
+import java.util.Scanner; // 스캐너를 사용하기 위해
 
 class Main{
     public static void main(String args[]){

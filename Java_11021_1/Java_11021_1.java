@@ -14,14 +14,14 @@ class Main{ // Main 클래스
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
         int N=s.nextInt(); // 사용자로부터 정수 입력받기
         
-        for(int i=0;i<N;i++){
-            int a, b;
-            a=s.nextInt();
+        for(int i=0;i<N;i++){ // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
+            int a, b; // 변수 선언
+            a=s.nextInt(); // 사용자로부터 정수 입력받기
             b=s.nextInt();
             
-            System.out.println("Case #"+(i+1)+": "+(a+b));
+            System.out.println("Case #"+(i+1)+": "+(a+b)); // 결과 출력하기
         }
         
-        s.close();
+        s.close(); // 스캐너 s 종료
     }
 }

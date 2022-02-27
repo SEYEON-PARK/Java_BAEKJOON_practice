@@ -7,12 +7,12 @@
 각 테스트 케이스마다 "Case #x: "를 출력한 다음, A+B를 출력한다. 테스트 케이스 번호는 1부터 시작한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String srg[]){
-        Scanner s = new Scanner(System.in);
-        int N=s.nextInt();
+class Main{ // Main 클래스
+    public static void main(String srg[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int N=s.nextInt(); // 사용자로부터 정수 입력받기
         
         for(int i=0;i<N;i++){
             int a, b;

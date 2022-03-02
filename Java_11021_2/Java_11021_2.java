@@ -10,12 +10,12 @@
 import java.util.*; // 스캐너를 사용하기 위해서
 
 class Main{ // Main 클래스
-    public static void main(String srg[]){
-        Scanner s = new Scanner(System.in);
-        int N=s.nextInt();
+    public static void main(String srg[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int N=s.nextInt(); // 사용자로부터 정수 입력받기
         
-        for(int i=1;i<=N;i++){
-            int a, b;
+        for(int i=1;i<=N;i++){ // i가 1부터 N보다 작거나 같을 때까지 1씩 증가하며 반복
+            int a, b; // 변수 선언
             a=s.nextInt();
             b=s.nextInt();
             

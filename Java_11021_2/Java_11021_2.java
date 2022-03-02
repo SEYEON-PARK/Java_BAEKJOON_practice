@@ -12,16 +12,16 @@ import java.util.*; // 스캐너를 사용하기 위해서
 class Main{ // Main 클래스
     public static void main(String srg[]){ // main 메소드
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
-        int N=s.nextInt(); // 사용자로부터 정수 입력받기
+        int N=s.nextInt(); // 사용자로부터 정수(테스트 케이스의 개수) 입력받기
         
         for(int i=1;i<=N;i++){ // i가 1부터 N보다 작거나 같을 때까지 1씩 증가하며 반복
             int a, b; // 변수 선언
-            a=s.nextInt();
-            b=s.nextInt();
+            a=s.nextInt(); // 사용자로부터 정수 입력받기
+            b=s.nextInt(); // 사용자로부터 정수 입력받기
             
-            System.out.println("Case #"+(i)+": "+(a+b));
+            System.out.println("Case #"+(i)+": "+(a+b)); // 결과 출력하기
         }
         
-        s.close();
+        s.close(); // 스캐너 s 닫기
     }
 }

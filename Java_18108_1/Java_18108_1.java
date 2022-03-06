@@ -8,3 +8,16 @@ ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 �
 
 불기 연도를 서기 연도로 변환한 결과를 출력한다.
 */
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String args[]){
+        Scanner a = new Scanner(System.in);
+        int y=a.nextInt();
+        
+        System.out.println(y-543);
+        
+        a.close();
+    }
+}

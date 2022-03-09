@@ -12,12 +12,12 @@ ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 �
 import java.util.*; // 스캐너를 사용하기 위해
 
 class Main{ // Main 클래스
-    public static void main(String args[]){
-        Scanner a = new Scanner(System.in);
-        int y=a.nextInt();
+    public static void main(String args[]){ // main 메소드
+        Scanner a = new Scanner(System.in); // 스캐너 a 생성
+        int y=a.nextInt(); // 사용자로부터 정수 입력받기
         
-        System.out.println(y-543);
+        System.out.println(y-543); // 결과 출력하기
         
-        a.close();
+        a.close(); // 스캐너 a 닫기
     }
 }

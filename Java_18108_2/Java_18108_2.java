@@ -14,9 +14,9 @@ import java.util.*; // 스캐너를 사용하기 위해
 class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner a = new Scanner(System.in); // 스캐너 a 생성
-        int y=a.nextInt(); // 사용자로부터 정수 입력받기
+        int y=a.nextInt(); // 사용자로부터 정수(불기 연도) 입력받기
         
-        System.out.println(y-543); // 결과 출력하기
+        System.out.println(y-543); // 결과(서기 연도) 출력하기
         
         a.close(); // 스캐너 a 닫기
     }

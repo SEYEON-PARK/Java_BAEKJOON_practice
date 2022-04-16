@@ -11,18 +11,18 @@ import java.util.Scanner; // Scanner를 사용하기 위해서
 
 class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
-        int M, F;
-        Scanner sc = new Scanner(System.in);
-        while(true){
-            M=sc.nextInt();
-            F=sc.nextInt();
-            if(M==0 && F==0){
-                break;
+        int M, F; // 변수 선언
+        Scanner sc = new Scanner(System.in); // 스캐너 sc 생성
+        while(true){ // 무한 반복
+            M=sc.nextInt(); // 사용자로부터 정수 입력받기
+            F=sc.nextInt(); // 
+            if(M==0 && F==0){ // 만약, M이 0이고 F도 0이라면
+                break; // 가장 가까운 반복문(while문) 빠져 나가기
             }
-            System.out.println(M+F);
+            System.out.println(M+F); // 결과 출력하기
         }
         
-        sc.close();
+        sc.close(); // 스캐너 sc 종료하기
     }
 
 }

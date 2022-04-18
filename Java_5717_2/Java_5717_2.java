@@ -14,13 +14,13 @@ class Main{ // Main 클래스
         int M, F; // 변수 선언
         Scanner sc = new Scanner(System.in); // 스캐너 sc 생성
         while(true){ // 무한 반복
-            M=sc.nextInt(); // 사용자로부터 정수 입력받기
-            F=sc.nextInt();
+            M=sc.nextInt(); // 사용자로부터 정수(상근이의 남자 친구의 수) 입력받기
+            F=sc.nextInt(); // 사용자로부터 정수(상근이의 여자 친구의 수) 입력받기
             
-            if(M==0 && F==0) // 만약, M이 0이고 F도 0이라면
+            if(M==0 && F==0) // 만약, M(상근이의 남자 친구의 수)이 0이고 F(상근이의 여자 친구의 수)도 0이라면
                 break; // 가장 가까운 반복문(while문)을 빠져 나가기
 
-            System.out.println(M+F); // 결과 출력하기
+            System.out.println(M+F); // 결과(상근이의 친구의 수) 출력하기
         }
         
         sc.close(); // 스캐너 sc 닫기

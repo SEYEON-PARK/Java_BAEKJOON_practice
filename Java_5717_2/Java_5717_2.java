@@ -7,11 +7,11 @@
 각 테스트 케이스마다 상근이의 친구의 수를 출력한다.
 */
 
-import java.util.Scanner;
+import java.util.Scanner; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        int M, F;
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        int M, F; // 변수 선언
         Scanner sc = new Scanner(System.in);
         while(true){
             M=sc.nextInt();

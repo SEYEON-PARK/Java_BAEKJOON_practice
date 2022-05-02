@@ -15,12 +15,12 @@ class Main{ // Main 클래스
         int T = scan.nextInt(); // 사용자로부터 정수 입력받기
         
         for(int i=0;i<T;i++){ // i가 0부터 T가 되기 전까지 1씩 증가시키며 반복
-            int A = scan.nextInt(); //
-            int B = scan.nextInt();
+            int A = scan.nextInt(); // 사용자로부터 정수 입력받기
+            int B = scan.nextInt(); // 사용자로부터 정수 입력받기
             
-            System.out.println(A+B);
+            System.out.println(A+B); // 결과 출력하기
         }
         
-        scan.close();
+        scan.close(); // 스캐너 scan 종료
     }
 }

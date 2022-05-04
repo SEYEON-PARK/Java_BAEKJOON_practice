@@ -14,11 +14,11 @@ class Main{ // Main 클래스
         Scanner scan = new Scanner(System.in); // 새로운 스캐너 scan 생성
         int T = scan.nextInt(); // 사용자로부터 정수 입력받기
         
-        for(int i=0;i<T;i++){
-            int A = scan.nextInt();
+        for(int i=0;i<T;i++){ // i가 0부터 T가 되기 전까지 1씩 증가하며 반복
+            int A = scan.nextInt(); // 사용자로부터 정수 입력받기
             int B = scan.nextInt();
             
-            System.out.println(A+B);
+            System.out.println(A+B); // 결과 출력하기
         }
         
         scan.close();

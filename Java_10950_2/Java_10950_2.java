@@ -7,12 +7,12 @@
 각 테스트 케이스마다 A+B를 출력한다.
 */
 
-import java.util.Scanner;
+import java.util.Scanner; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner scan = new Scanner(System.in);
-        int T = scan.nextInt();
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner scan = new Scanner(System.in); // 새로운 스캐너 scan 생성
+        int T = scan.nextInt(); // 사용자로부터 정수 입력받기
         
         for(int i=0;i<T;i++){
             int A = scan.nextInt();

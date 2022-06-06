@@ -15,13 +15,13 @@ class Main{ // Main 클래스
         Scanner a = new Scanner(System.in); // 스캐너 a 생성
         int N = a.nextInt(); // 사용자로부터 정수 입력받기
         
-        if(N%2==0){ // N%2의 값이 0과 같다면
-            System.out.println("SK");
+        if(N%2==0){ // 만약, N%2의 값이 0과 같다면
+            System.out.println("SK"); // "SK" 출력하기
         }
-        else{
-            System.out.println("CY");
+        else{ // N%2의 값이 0과 같지 않다면
+            System.out.println("CY"); // "CY" 출력하기
         }
         
-        a.close();
+        a.close(); // 스캐너 a 닫기
     }
 }

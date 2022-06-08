@@ -18,10 +18,10 @@ class Main{ // Main 클래스
         if(N%2==0){ // 만약, N%2의 값이 0이라면
             System.out.print("SK"); // "SK" 출력하기
         }
-        else{
-            System.out.print("CY");
+        else{ // N%2의 값이 0이 아니라면
+            System.out.print("CY"); // "CY" 출력하기
         }
         
-        a.close();
+        a.close(); // 스캐너 a 닫기
     }
 }

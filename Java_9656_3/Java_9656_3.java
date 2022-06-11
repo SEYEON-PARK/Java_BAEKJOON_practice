@@ -20,6 +20,6 @@ class Main{ // Main 클래스
         else // N%2의 값이 0이 아니라면
             System.out.println("CY"); // "CY" 출력하기
 
-        a.close(); // 스캐너 a 
+        a.close(); // 스캐너 a 닫기
     }
 }

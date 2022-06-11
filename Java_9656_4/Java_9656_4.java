@@ -7,3 +7,21 @@
 
 상근이가 게임을 이기면 SK를, 창영이가 게임을 이기면 CY을 출력한다.
 */
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String args[]){
+        Scanner a = new Scanner(System.in);
+        int N = a.nextInt();
+        
+        if(N%2==1){
+            System.out.println("CY");
+        }
+        else{
+            System.out.println("SK");
+        }
+        
+        a.close();
+    }
+}

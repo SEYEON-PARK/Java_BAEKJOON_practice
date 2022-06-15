@@ -8,10 +8,10 @@
 상근이가 게임을 이기면 SK를, 창영이가 게임을 이기면 CY을 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
         Scanner a = new Scanner(System.in);
         int N = a.nextInt();
         

@@ -15,10 +15,10 @@ X와 Y의 값은 3보다 작거나 같고, X와 Y가 같을 수도 있다.
 
 import java.util.Scanner;
 
-class Main{
-    public static void main(String arg[]){
-        Scanner a = new Scanner(System.in);
-        int M=a.nextInt();
+class Main{ // Main 클래스
+    public static void main(String arg[]){ // main 메소드
+        Scanner a = new Scanner(System.in); // 새로운 스캐너 a 생성
+        int M=a.nextInt(); // 사용자로부터 정수 입력받기
         int x, y;
         int ball_cup=1;
         

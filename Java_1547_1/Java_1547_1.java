@@ -19,14 +19,14 @@ class Main{ // Main 클래스
     public static void main(String arg[]){ // main 메소드
         Scanner a = new Scanner(System.in); // 새로운 스캐너 a 생성
         int M=a.nextInt(); // 사용자로부터 정수 입력받기
-        int x, y;
-        int ball_cup=1;
+        int x, y; // 변수 선언
+        int ball_cup=1; // 변수 선언 및 초기화
         
-        for (int i=0;i<M;i++){
-            x=a.nextInt();
-            y=a.nextInt();
-            if(ball_cup==x){
-                ball_cup=y;
+        for (int i=0;i<M;i++){ // i가 0부터 M이 되기 전까지 1씩 증가하며 반복
+            x=a.nextInt(); // 사용자로부터 정수 입력받기
+            y=a.nextInt(); // 사용자로부터 정수 입력받기
+            if(ball_cup==x){ // 만약, ball_cup의 값이 x의 값과 같다면
+                ball_cup=y; // ball_cup에 y의 값 
             }
             else if(ball_cup==y){
                 ball_cup=x;

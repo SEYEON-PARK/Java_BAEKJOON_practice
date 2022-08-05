@@ -18,21 +18,21 @@ import java.util.*; // 스캐너를 사용하기 위해서
 class Main{ // Main 클래스
     public static void main(String arg[]){ // main 메소드
         Scanner a = new Scanner(System.in); // 새로운 스캐너 a 생성
-        int M=a.nextInt(); // 사용자로부터 정수 입력받기
+        int M=a.nextInt(); // 사용자로부터 정수(컵의 위치를 바꾼 횟수) 입력받기
         int x, y, ball_cup=1; // 변수 선언 및 초기화
         
         for (int i=0;i<M;i++){ // i가 0부터 M보다 작을 때까지 1씩 증가하며 반복
-            x=a.nextInt(); // 사용자로부터 정수 입력받기
-            y=a.nextInt();
-            if(ball_cup==x){
-                ball_cup=y;
+            x=a.nextInt(); // 사용자로부터 정수(컵의 위치를 바꾼 방법) 입력받기
+            y=a.nextInt(); // 사용자로부터 정수(컵의 위치를 바꾼 방법) 입력받기
+            if(ball_cup==x){ // 만약, ball_cup의 값이 x의 값과 같다면
+                ball_cup=y; // ball_cup에 y의 값 대입하기
             }
-            else if(ball_cup==y){
-                ball_cup=x;
+            else if(ball_cup==y){ // 만약 ball_cup의 값이 x의 값과 같지 않고, ball_cup의 값이 y의 값과 같다면
+                ball_cup=x; // ball_cup에 x의 값 대입하기
             }
         }
         
-        System.out.println(ball_cup);
-        a.close();
+        System.out.println(ball_cup); // 결과 출력하기
+        a.close(); // 스캐너 a 종료
     }
 }

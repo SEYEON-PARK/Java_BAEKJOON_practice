@@ -21,8 +21,8 @@ class Main{ // Main 클래스
         int M=a.nextInt(); // 사용자로부터 정수 입력받기
         int x, y, ball_cup=1; // 변수 선언 및 초기화
         
-        for (int i=0;i<M;i++){
-            x=a.nextInt();
+        for (int i=0;i<M;i++){ // i가 0부터 M보다 작을 때까지 1씩 증가하며 반복
+            x=a.nextInt(); // 사용자로부터 정수 입력받기
             y=a.nextInt();
             if(ball_cup==x){
                 ball_cup=y;

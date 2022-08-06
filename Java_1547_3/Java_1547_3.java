@@ -12,3 +12,29 @@ X와 Y의 값은 3보다 작거나 같고, X와 Y가 같을 수도 있다.
 
 첫째 줄에 공이 들어있는 컵의 번호를 출력한다. 공이 사라져서 컵 밑에 없는 경우에는 -1을 출력한다.
 */
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String arg[]){
+        Scanner a = new Scanner(System.in);
+        int M=a.nextInt();
+        int x, y;
+        int ball_cup=1;
+        
+        for (int i=0;i<M;i++){
+            x=a.nextInt();
+            y=a.nextInt();
+            if(ball_cup==x){
+                ball_cup=y;
+                y=0;
+            }
+            if(ball_cup==y){
+                ball_cup=x;
+            }
+        }
+        
+        System.out.println(ball_cup);
+        a.close();
+    }
+}

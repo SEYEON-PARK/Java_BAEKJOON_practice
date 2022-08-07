@@ -22,9 +22,9 @@ class Main{ // Main 클래스
         int x, y; // 변수 선언
         int ball_cup=1; // 변수 선언 및 초기화
         
-        for (int i=0;i<M;i++){
-            x=a.nextInt();
-            y=a.nextInt();
+        for (int i=0;i<M;i++){ // i가 0부터 M이 되기 전까지 1씩 증가하며 반복
+            x=a.nextInt(); // 사용자로부터 정수 입력받기
+            y=a.nextInt(); // 
             if(ball_cup==x){
                 ball_cup=y;
                 y=0;

@@ -13,14 +13,14 @@ X와 Y의 값은 3보다 작거나 같고, X와 Y가 같을 수도 있다.
 첫째 줄에 공이 들어있는 컵의 번호를 출력한다. 공이 사라져서 컵 밑에 없는 경우에는 -1을 출력한다.
 */
 
-import java.util.Scanner;
+import java.util.Scanner; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String arg[]){
-        Scanner a = new Scanner(System.in);
-        int M=a.nextInt();
-        int x, y;
-        int ball_cup=1;
+class Main{ // Main 클래스
+    public static void main(String arg[]){ // main 메소드
+        Scanner a = new Scanner(System.in); // 새로운 스캐너 a 생성
+        int M=a.nextInt(); // 사용자로부터 정수 입력받기
+        int x, y; // 변수 선언
+        int ball_cup=1; // 변수 선언 및 초기화
         
         for (int i=0;i<M;i++){
             x=a.nextInt();

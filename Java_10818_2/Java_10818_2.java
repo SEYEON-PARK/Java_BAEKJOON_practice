@@ -12,7 +12,7 @@ import java.util.*; // 스캐너를 사용하기 위해
 class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner s = new Scanner(System.in); // 새로운 스캐너 s 생성
-        int N=s.nextInt(); // 사용자로부터 정수 입력받기
+        int N=s.nextInt(); // 사용자로부터 정수(정수의 개수) 입력받기
         int max, min; // 변수 선언
         int n[];
         n = new int [1000000]; // 배열 선언
@@ -22,20 +22,20 @@ class Main{ // Main 클래스
         }
         
         max=n[0]; // max에 n[0]의 값 대입하기
-        min=n[0];
+        min=n[0]; // min에 n[0]의 값 대입하기
         
-        for(int i=0;i<N;i++){
-            if(n[i]>max){
-                max=n[i];
+        for(int i=0;i<N;i++){ // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
+            if(n[i]>max){ // 만약, n[i]의 값이 max의 값보다 크다면
+                max=n[i]; // max에 n[i]의 값 대입하기
             }
         }
         
-        for(int i=0;i<N;i++){
-            if(n[i]<min){
-                min=n[i];
+        for(int i=0;i<N;i++){ // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
+            if(n[i]<min){ // 만약, n[i]의 값이 min의 값보다 작다면
+                min=n[i]; // min에 n[i]의 값 대입하기
             }
         }
         
-        System.out.print(min+" "+max);
+        System.out.print(min+" "+max); // 결과 출력하기
     }
 }

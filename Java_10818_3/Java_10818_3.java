@@ -12,7 +12,7 @@ import java.util.*; // 스캐너를 사용하기 위해
 class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
-        int N=s.nextInt(); // 사용자로부터 정수 입력받기
+        int N=s.nextInt(); // 사용자로부터 정수(정수의 개수) 입력받기
         int n[];
         n = new int [1000000]; // 배열 선언
         

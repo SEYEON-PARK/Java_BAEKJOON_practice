@@ -20,9 +20,9 @@ class Main{ // Main 클래스
             n[i]=s.nextInt(); // 사용자로부터 정수를 입력받아 n[i]에 대입하기
         }
         
-        int max=n[0], min=n[0];
+        int max=n[0], min=n[0]; // max에 n[0]의 값 대입하고, min에 n[0]의 값 대입하기
         
-        for(int i=0;i<N;i++){
+        for(int i=0;i<N;i++){ 
             if(n[i]>max){
                 max=n[i];
             }

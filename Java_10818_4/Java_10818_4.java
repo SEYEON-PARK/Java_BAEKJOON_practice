@@ -7,11 +7,11 @@ N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프�
 첫째 줄에 주어진 정수 N개의 최솟값과 최댓값을 공백으로 구분해 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner s = new Scanner(System.in);
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
         int N=s.nextInt();
         int max, min;
         int n[];

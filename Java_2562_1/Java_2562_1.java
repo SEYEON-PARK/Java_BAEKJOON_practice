@@ -19,10 +19,10 @@ class Main{ // Main 클래스
         int big_number=0; // 변수 선언 및 초기화
         
         for(int i=0;i<9;i++){ // i가 0부터 9가 되기 전까지 1씩 증가하며 반복
-            n[i]=one.nextInt();
+            n[i]=one.nextInt(); // 사용자로부터 정수 입력받아 n[i]에 저장하기
         }
         
-        int max=n[0];
+        int max=n[0]; // 변수 선언 및 초기화
         for(int i=0;i<9;i++){
             if(n[i]>max){
                 max=n[i];

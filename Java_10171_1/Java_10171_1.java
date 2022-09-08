@@ -14,4 +14,3 @@ class Main{ // Main 클래스
         System.out.println(" \\(__)|"); // 출력하기
     }
 }
-

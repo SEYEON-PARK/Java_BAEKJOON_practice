@@ -8,3 +8,31 @@
 
 첫째 줄에 최댓값을 출력하고, 둘째 줄에 최댓값이 몇 번째 수인지를 출력한다.
 */
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String args[]){
+        Scanner one = new Scanner(System.in);
+        int n[];
+        n = new int[9];
+        int big_number=0;
+        
+        for(int i=0;i<9;i++){
+            n[i]=one.nextInt();
+        }
+        
+        int max=0;
+        for(int i=0;i<9;i++){
+            if(n[i]>max){
+                max=n[i];
+                big_number=i;
+            }
+        }
+        
+        System.out.println(max);
+        System.out.println(big_number+1);
+        
+        one.close();
+    }
+}

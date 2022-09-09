@@ -23,16 +23,16 @@ class Main{ // Main 클래스
         }
         
         int max=0; // 변수 선언 및 초기화(입력받았던 수가 자연수이기 때문에 max를 0으로 초기화해도 된다.)
-        for(int i=0;i<9;i++){ 
+        for(int i=0;i<9;i++){ // i가 0부터 9가 되기 전까지 1씩 증가하며 반복
             if(n[i]>max){ // 만약, n[i]의 값이 max의 값보다 크다면
-                max=n[i];
-                big_number=i;
+                max=n[i]; // max에 n[i]의 값 대입하기
+                big_number=i; // big_number에 i의 값 대입하기
             }
         }
         
         System.out.println(max);
-        System.out.println(big_number+1);
+        System.out.println(big_number+1); // 결과 출력하기
         
-        one.close();
+        one.close(); // 스캐너 one 닫기
     }
 }

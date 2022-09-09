@@ -9,17 +9,17 @@
 첫째 줄에 최댓값을 출력하고, 둘째 줄에 최댓값이 몇 번째 수인지를 출력한다.
 */
 
-import java.util.Scanner;
+import java.util.Scanner; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner one = new Scanner(System.in);
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner one = new Scanner(System.in); // 스캐너 one 생성
         int n[];
-        n = new int[9];
-        int big_number=0;
+        n = new int[9]; // 배열 선언
+        int big_number=0; // 변수 선언 및 초기화
         
-        for(int i=0;i<9;i++){
-            n[i]=one.nextInt();
+        for(int i=0;i<9;i++){ // i가 0부터 9가 되기 전까지 1씩 증가하며 반복
+            n[i]=one.nextInt(); // 사용자로부터 정수를 입력받아 n[i]에 저장
         }
         
         int max=0;

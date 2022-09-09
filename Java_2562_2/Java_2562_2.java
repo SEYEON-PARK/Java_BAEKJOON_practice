@@ -22,9 +22,9 @@ class Main{ // Main 클래스
             n[i]=one.nextInt(); // 사용자로부터 정수를 입력받아 n[i]에 저장
         }
         
-        int max=0;
-        for(int i=0;i<9;i++){
-            if(n[i]>max){
+        int max=0; // 변수 선언 및 초기화(입력받았던 수가 자연수이기 때문에 max를 0으로 초기화해도 된다.)
+        for(int i=0;i<9;i++){ 
+            if(n[i]>max){ // 만약, n[i]의 값이 max의 값보다 크다면
                 max=n[i];
                 big_number=i;
             }

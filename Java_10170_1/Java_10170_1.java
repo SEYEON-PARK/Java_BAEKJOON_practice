@@ -8,7 +8,7 @@
 
 class Main{
     public static void main(String [] args){
-        System.out.println("NFC West       W   L  T"); // 문자열 출력하기
+        System.out.println("NFC West       W   L  T");
         System.out.println("-----------------------");
         System.out.println("Seattle        13  3  0");
         System.out.println("San Francisco  12  4  0");
@@ -20,6 +20,6 @@ class Main{
         System.out.println("Green Bay      8   7  1");
         System.out.println("Chicago        8   8  0");
         System.out.println("Detroit        7   9  0");
-        System.out.println("Minnesota      5  10  1");
+        System.out.println("Minnesota      5  10  1"); // 문자열 출력하기
     }
 }

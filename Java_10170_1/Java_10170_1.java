@@ -20,6 +20,6 @@ class Main{
         System.out.println("Green Bay      8   7  1");
         System.out.println("Chicago        8   8  0");
         System.out.println("Detroit        7   9  0");
-        System.out.println("Minnesota      5  10  1"); // 문자열 출력하기
+        System.out.println("Minnesota      5  10  1"); // 결과 출력하기
     }
 }

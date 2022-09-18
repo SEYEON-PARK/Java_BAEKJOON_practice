@@ -8,7 +8,7 @@
 
 class Main{
     public static void main(String [] args){
-        System.out.println("NFC West       W   L  T");
+        System.out.println("NFC West       W   L  T"); // 문자열 출력하기
         System.out.println("-----------------------");
         System.out.println("Seattle        13  3  0");
         System.out.println("San Francisco  12  4  0");

@@ -12,3 +12,21 @@
 
 첫째 줄에 민준이가 버스에 탑승하기 위해서 기다려야 하는 최소 시간을 출력한다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner a = new Scanner(System.in);
+        int x, y;
+        x=a.nextInt();
+        y=a.nextInt();
+        
+        if(y>=x){
+            System.out.println(y-x);
+        }
+        else{
+            System.out.println(x+y);
+        }
+    }
+}

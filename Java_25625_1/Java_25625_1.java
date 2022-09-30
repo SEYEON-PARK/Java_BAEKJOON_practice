@@ -19,14 +19,14 @@ class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner a = new Scanner(System.in); // 새로운 스캐너 a 생성하기
         int x, y; // 변수 선언
-        x=a.nextInt(); // 사용자로부터 정수 입력받기
-        y=a.nextInt();
+        x=a.nextInt(); // 사용자로부터 정수(버스가 서울대입구역에서 제2공학관으로 이동하는 데에, 혹은 제2공학관에서 서울대입구역으로 이동하는 데에 걸리는 시간) 입력받기
+        y=a.nextInt(); // 사용자로부터 정수(버스가 제2공학관으로 도착하기까지 남은 시간) 입력받기
         
         if(y>=x){ // 만약, y가 x보다 크거나 같으면
             System.out.println(y-x); // y-x의 값 출력하기
         }
-        else{ 
-            System.out.println(x+y);
+        else{ // y가 x보다 크거나 같지 않으면(작으면)
+            System.out.println(x+y); // x+y의 값 출력하기
         }
     }
 }

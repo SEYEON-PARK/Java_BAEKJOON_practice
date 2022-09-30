@@ -13,12 +13,12 @@
 첫째 줄에 민준이가 버스에 탑승하기 위해서 기다려야 하는 최소 시간을 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner a = new Scanner(System.in);
-        int x, y;
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner a = new Scanner(System.in); // 새로운 스캐너 a 생성하기
+        int x, y; // 변수 선언
         x=a.nextInt();
         y=a.nextInt();
         

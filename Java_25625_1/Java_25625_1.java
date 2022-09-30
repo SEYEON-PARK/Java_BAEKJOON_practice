@@ -19,13 +19,13 @@ class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner a = new Scanner(System.in); // 새로운 스캐너 a 생성하기
         int x, y; // 변수 선언
-        x=a.nextInt();
+        x=a.nextInt(); // 사용자로부터 정수 입력받기
         y=a.nextInt();
         
-        if(y>=x){
-            System.out.println(y-x);
+        if(y>=x){ // 만약, y가 x보다 크거나 같으면
+            System.out.println(y-x); // y-x의 값 출력하기
         }
-        else{
+        else{ 
             System.out.println(x+y);
         }
     }

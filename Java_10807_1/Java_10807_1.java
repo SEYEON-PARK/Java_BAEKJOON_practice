@@ -15,23 +15,23 @@ class Main{ // Main 클래스
         
         int N=s.nextInt(); // 사용자로부터 정수 입력받기
         int num[];
-        num = new int[100];
+        num = new int[100]; // 배열 선언
         
-        for(int i=0;i<N;i++){
-            num[i]=s.nextInt();
+        for(int i=0;i<N;i++){ // i가 0부터 N이 되기 전까지 1씩 증가하며 반복
+            num[i]=s.nextInt(); // 사용자로부터 정수 입력받아 배열 num에 순차적으로 저장
         }
         
-        int v=s.nextInt();
-        int count=0;
+        int v=s.nextInt(); // 사용자로부터 정수 입력받기
+        int count=0; // 변수 count 선언 및 초기화
         
         for(int i=0;i<N;i++){
-            if(num[i]==v){
-                count++;
+            if(num[i]==v){ // 만약, num[i]의 값이 v의 값과 같다면
+                count++; // count에 1 더하기
             }
         }
         
-        System.out.println(count);
+        System.out.println(count); // 결과 출력하기
         
-        s.close();
+        s.close(); // 스캐너 s 닫기
     }
 }

@@ -13,7 +13,7 @@ class Main{ // Main 클래스
     public static void main(String args []){ // main 메소드
         Scanner s = new Scanner(System.in); // 새로운 스캐너 s 생성
         
-        int N=s.nextInt(); // 사용자로부터 정수 입력받기
+        int N=s.nextInt(); // 사용자로부터 정수(정수의 개수) 입력받기
         int num[];
         num = new int[100]; // 배열 선언
         
@@ -21,10 +21,10 @@ class Main{ // Main 클래스
             num[i]=s.nextInt(); // 사용자로부터 정수 입력받아 배열 num에 순차적으로 저장
         }
         
-        int v=s.nextInt(); // 사용자로부터 정수 입력받기
+        int v=s.nextInt(); // 사용자로부터 정수(찾으려고 하는 정수) 입력받기
         int count=0; // 변수 count 선언 및 초기화
         
-        for(int i=0;i<N;i++){
+        for(int i=0;i<N;i++){ // i가 0부터 N이 되기 전까지 1씩 증가하며 반복
             if(num[i]==v){ // 만약, num[i]의 값이 v의 값과 같다면
                 count++; // count에 1 더하기
             }

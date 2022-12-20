@@ -6,3 +6,32 @@
 
 첫째 줄에 입력으로 주어진 N개의 정수 중에 v가 몇 개인지 출력한다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String args []){
+        Scanner s = new Scanner(System.in);
+        
+        int N=s.nextInt();
+        int num[];
+        num = new int[100];
+        
+        for(int i=0;i<N;i++){
+            num[i]=s.nextInt();
+        }
+        
+        int v=s.nextInt();
+        int count=0;
+        
+        for(int i=0;i<N;i++){
+            if(num[i]==v){
+                count++;
+            }
+        }
+        
+        System.out.println(count);
+        
+        s.close();
+    }
+}

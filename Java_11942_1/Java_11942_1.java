@@ -8,6 +8,6 @@
 
 class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
-        System.out.println("고려대학교");
+        System.out.println("고려대학교"); // "고려대학교" 출력하기
     }
 }

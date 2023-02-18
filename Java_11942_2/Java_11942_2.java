@@ -6,7 +6,7 @@
 첫째 줄에 “고려대학교”를 출력하세요.
 */
 
-class Main{
+class Main{ // Main 클래스
     public static void main(String args[]){
         System.out.print("고려대학교");
     }

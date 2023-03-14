@@ -8,3 +8,15 @@
 
 출력으로 홍익대학교의 개교 주년을 나타내는 정수를 출력한다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String [] args){
+        Scanner s=new Scanner(System.in);
+        int y;
+        y=s.nextInt();
+        
+        System.out.println(y-1946);
+    }
+}

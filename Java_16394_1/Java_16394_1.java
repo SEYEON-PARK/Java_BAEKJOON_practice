@@ -9,10 +9,10 @@
 출력으로 홍익대학교의 개교 주년을 나타내는 정수를 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String [] args){
+class Main{ // Main 클래스
+    public static void main(String [] args){ // main 메소드
         Scanner s=new Scanner(System.in);
         int y;
         y=s.nextInt();

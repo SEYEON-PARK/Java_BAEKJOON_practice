@@ -17,6 +17,6 @@ class Main{ // Main 클래스
         int y; // 변수 선언
         y=s.nextInt(); // 사용자로부터 정수 입력받기
         
-        System.out.println(y-1946);
+        System.out.println(y-1946); // 결과 출력하기
     }
 }

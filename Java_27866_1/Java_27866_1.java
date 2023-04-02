@@ -16,8 +16,8 @@ class Main{ // Main 클래스
         String st = s.next(); // 사용자로부터 문자열 입력받기
         int n = s.nextInt(); // 사용자로부터 정수 입력받기
         
-        System.out.println(st.charAt(n-1));
+        System.out.println(st.charAt(n-1)); // 결과 출력하기(그냥 문자열 안에 있는 문자 하나에 접근할 때는 charAt() 메소드를 사용해야 한다!)
         
-        s.close();
+        s.close(); // 스캐너 닫기
     }
 }

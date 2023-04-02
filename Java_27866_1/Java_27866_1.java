@@ -6,3 +6,18 @@
 
 S의 i번째 글자를 출력한다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        
+        String st = s.next();
+        int n = s.nextInt();
+        
+        System.out.println(st.charAt(n-1));
+        
+        s.close();
+    }
+}

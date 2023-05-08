@@ -8,3 +8,29 @@
 
 첫째 줄에 단어의 개수를 출력한다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner scanner=new Scanner(System.in);
+        int count=0;
+        String s=scanner.nextLine();
+        
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)==' '){
+                count++;
+            }
+        }
+        
+        if(s.charAt(0)==' ' && s.charAt(s.length()-1)==' '){
+            System.out.println(count-1);
+        }
+        else if(s.charAt(0)==' ' || s.charAt(s.length()-1)==' '){
+            System.out.println(count);
+        }
+        else{
+            System.out.println(count+1);
+        }
+    }
+}

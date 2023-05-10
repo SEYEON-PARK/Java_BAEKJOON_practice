@@ -9,13 +9,13 @@
 첫째 줄에 단어의 개수를 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner scanner=new Scanner(System.in);
-        int count=0;
-        String s=scanner.nextLine();
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner scanner=new Scanner(System.in); // 스캐너 scanner 생성
+        int count=0; // 변수 선언 및 초기화
+        String s=scanner.nextLine(); // 사용자로부터 공백을 포함한 문자열 입력받기
         
         for(int i=0;i<s.length();i++){
             if(s.charAt(i)==' '){

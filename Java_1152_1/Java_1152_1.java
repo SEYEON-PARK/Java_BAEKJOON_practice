@@ -17,9 +17,9 @@ class Main{ // Main 클래스
         int count=0; // 변수 선언 및 초기화
         String s=scanner.nextLine(); // 사용자로부터 공백을 포함한 문자열 입력받기
         
-        for(int i=0;i<s.length();i++){
-            if(s.charAt(i)==' '){
-                count++;
+        for(int i=0;i<s.length();i++){ // i가 0부터 문자열 s의 길이보다 작을 때까지 i를 1씩 증가시키며 반복
+            if(s.charAt(i)==' '){ // 만약, 문자열 s의 i번째 인덱스가 ' '(공백)이라면
+                count++; // count를 1 증가시키기
             }
         }
         

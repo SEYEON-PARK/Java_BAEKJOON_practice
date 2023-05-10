@@ -23,14 +23,14 @@ class Main{ // Main 클래스
             }
         }
         
-        if(s.charAt(0)==' ' && s.charAt(s.length()-1)==' '){
-            System.out.println(count-1);
+        if(s.charAt(0)==' ' && s.charAt(s.length()-1)==' '){ // 만약, 문자열 s의 0번째 인덱스가 ' '(공백)이고, 마지막 인덱스도 ' '(공백)이라면
+            System.out.println(count-1); // count-1의 값 출력하기
         }
-        else if(s.charAt(0)==' ' || s.charAt(s.length()-1)==' '){
-            System.out.println(count);
+        else if(s.charAt(0)==' ' || s.charAt(s.length()-1)==' '){ // 만약, 맨 끝 둘 다 ' '(공백)은 아니고, 문자열 s의 0번째 인덱스가 ' '(공백)이거나 마지막 인덱스가 ' '(공백)이라면
+            System.out.println(count); // count의 값 출력하기
         }
-        else{
-            System.out.println(count+1);
+        else{ // 맨 끝 둘 다 ' '(공백)이 아니라면
+            System.out.println(count+1); // count+1의 값 출력하기
         }
     }
 }

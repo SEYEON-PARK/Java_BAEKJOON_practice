@@ -38,13 +38,13 @@ class Main{ // Main 클래스
         T=s.nextInt(); // 사용자로부터 정수(시간) 입력받기
         S=s.nextInt(); // 사용자로부터 정수(술의 유무) 입력받기
         
-        if(S==1 || T<12 ||T>16){
-            System.out.println("280");
+        if(S==1 || T<12 ||T>16){ // 만약, S가 1이거나 T가 12보다 작거나 T가 16보다 크다면
+            System.out.println("280"); // "280" 출력하기
         }
-        else{
-            System.out.println("320");
+        else{ // S가 1이 아니고, T가 12보다 크거나 같고, T가 16보다 작거나 같다면
+            System.out.println("320"); // "320" 출력하기
         }
         
-        s.close();
+        s.close(); // 스캐너 닫기
     }
 }

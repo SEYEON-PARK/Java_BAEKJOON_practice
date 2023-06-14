@@ -35,8 +35,8 @@ class Main{ // Main 클래스
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
         int T, S; // 변수 선언
         
-        T=s.nextInt();
-        S=s.nextInt();
+        T=s.nextInt(); // 사용자로부터 정수(시간) 입력받기
+        S=s.nextInt(); // 사용자로부터 정수(술의 유무) 입력받기
         
         if(S==1 || T<12 ||T>16){
             System.out.println("280");

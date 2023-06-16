@@ -35,13 +35,13 @@ class Main{ // Main 클래스
         Scanner s = new Scanner(System.in); // 새로운 스캐너 s 생성
         int T, S; // 변수 선언
         
-        T=s.nextInt();
-        S=s.nextInt();
+        T=s.nextInt(); // 사용자로부터 정수 입력받기
+        S=s.nextInt(); // 사용자로부터 정수 입력받기
         
-        if(S==0 && T>=12 && T<=16){
-            System.out.println("320");
+        if(S==0 && T>=12 && T<=16){ // 만약, S가 0이고, T가 12보다 크거나 같고, T가 16보다 작거나 같다면
+            System.out.println("320"); // "320" 출력하기
         }
-        else{
+        else{ //
             System.out.println("280");
         }
         

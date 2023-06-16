@@ -27,3 +27,24 @@ T가 11이하이면 아침 시간, 12이상 16 이하이면 점심 시간, 그�
 
 첫 번째 줄에 주영이가 만들어야 하는 초밥 하나의 밥알의 갯수를 출력하여라.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        int T, S;
+        
+        T=s.nextInt();
+        S=s.nextInt();
+        
+        if(S==0 && T>=12 && T<=16){
+            System.out.println("320");
+        }
+        else{
+            System.out.println("280");
+        }
+        
+        s.close();
+    }
+}

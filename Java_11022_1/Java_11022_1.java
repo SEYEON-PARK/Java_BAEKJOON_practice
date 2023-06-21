@@ -18,7 +18,7 @@ class Main{ // Main 클래스
         for(int i=0;i<T;i++) // i가 0부터 T보다 작을 때까지 1씩 증가하며 반복
         {
             A=s.nextInt(); // 사용자로부터 정수 입력받기
-            B=s.nextInt();
+            B=s.nextInt(); // 사용자로부터 정수 입력받기
             System.out.printf("Case #%d: %d + %d = %d\n", i+1, A, B, A+B); // 형식에 맞춰 결과 출력하기
         }
     }

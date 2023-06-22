@@ -13,7 +13,7 @@ class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
         int A, B, T; // 변수 선언
-        T=s.nextInt(); // 사용자로부터 정수 입력받기
+        T=s.nextInt(); // 사용자로부터 정수(테스트 케이스의 개수) 입력받기
     
         for(int i=0;i<T;i++) // i가 0부터 T보다 작을 때까지 1씩 증가하며 반복
         {

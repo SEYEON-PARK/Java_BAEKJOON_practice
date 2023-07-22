@@ -22,3 +22,24 @@ asdfjkl;
   입력이 역계단인 경우: "reverse"
   만약 입력이 안밖, 밖안, 계단, 역계단 중 하나도 아니라면 "molu"를 출력한다.
 */
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        
+        String word=s.next();
+
+        if(word.equals("fdsajkl;") || word.equals("jkl;fdsa"))
+            System.out.println("in-out");
+        else if(word.equals("asdf;lkj") || word.equals(";lkjasdf"))
+            System.out.println("out-in");
+        else if(word.equals("asdfjkl;"))
+            System.out.println("stairs");
+        else if(word.equals(";lkjfdsa"))
+            System.out.println("reverse");
+        else
+            System.out.println("molu");
+    }
+}

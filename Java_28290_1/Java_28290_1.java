@@ -31,7 +31,8 @@ class Main{ // Main 클래스
         
         String word=s.next(); // 사용자로부터 문자열 입력받기
 
-        if(word.equals("fdsajkl;") || word.equals("jkl;fdsa"))
+        // 여기서 주의! '=='이 아닌 '.equals()'를 사용해야 내용에 대한 비교가 된다!!
+        if(word.equals("fdsajkl;") || word.equals("jkl;fdsa")) 
             System.out.println("in-out");
         else if(word.equals("asdf;lkj") || word.equals(";lkjasdf"))
             System.out.println("out-in");

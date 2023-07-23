@@ -32,15 +32,15 @@ class Main{ // Main 클래스
         String word=s.next(); // 사용자로부터 문자열 입력받기
 
         // 여기서 주의! '=='이 아닌 '.equals()'를 사용해야 내용에 대한 비교가 된다!!
-        if(word.equals("fdsajkl;") || word.equals("jkl;fdsa")) 
-            System.out.println("in-out");
-        else if(word.equals("asdf;lkj") || word.equals(";lkjasdf"))
-            System.out.println("out-in");
-        else if(word.equals("asdfjkl;"))
-            System.out.println("stairs");
-        else if(word.equals(";lkjfdsa"))
-            System.out.println("reverse");
-        else
-            System.out.println("molu");
+        if(word.equals("fdsajkl;") || word.equals("jkl;fdsa")) // 만약, 사용자가 입력한 문자열이 "fdsajkl;"와 같거나 "jkl;fdsa"와 같다면
+            System.out.println("in-out"); // "in-out" 출력하기
+        else if(word.equals("asdf;lkj") || word.equals(";lkjasdf")) // 만약, 위의 조건과 맞지 않고 사용자가 입력한 문자열이 "asdf;lkj"와 같거나 ";lkjasdf"와 같다면
+            System.out.println("out-in"); // "out-in" 출력하기
+        else if(word.equals("asdfjkl;")) // 만약, 위의 조건들과 맞지 않고 사용자가 입력한 문자열이 "asdfjkl;"와 같다면
+            System.out.println("stairs"); // "stairs" 출력하기
+        else if(word.equals(";lkjfdsa")) // 만약, 위의 조건들과 맞지 않고 사용자가 입력한 문자열이 ";lkjfdsa"와 같다면
+            System.out.println("reverse"); // "reverse" 출력하기
+        else // 위의 조건들과 맞지 않다면
+            System.out.println("molu"); // "molu" 출력하기
     }
 }

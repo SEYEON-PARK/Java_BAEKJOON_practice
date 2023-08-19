@@ -7,3 +7,20 @@
 
 첫째 줄에 (A+B)%C, 둘째 줄에 ((A%C) + (B%C))%C, 셋째 줄에 (A×B)%C, 넷째 줄에 ((A%C) × (B%C))%C를 출력한다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        
+        int A = s.nextInt();
+        int B = s.nextInt();
+        int C = s.nextInt();
+        
+        System.out.println((A+B)%C);
+        System.out.println(((A%C) + (B%C))%C);
+        System.out.println((A*B)%C);
+        System.out.println(((A%C) * (B%C))%C);
+    }
+}

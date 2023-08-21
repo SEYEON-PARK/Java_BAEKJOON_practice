@@ -16,11 +16,11 @@ class Main{ // Main 클래스
         
         int A = s.nextInt(); // 사용자로부터 정수 입력받기
         int B = s.nextInt(); // 사용자로부터 정수 입력받기
-        int C = s.nextInt();
+        int C = s.nextInt(); // 사용자로부터 정수 입력받기
         
-        System.out.println((A+B)%C);
-        System.out.println(((A%C) + (B%C))%C);
-        System.out.println((A*B)%C);
-        System.out.println(((A%C) * (B%C))%C);
+        System.out.println((A+B)%C); // (A+B)%C의 값 출력하기
+        System.out.println(((A%C) + (B%C))%C); // ((A%C) + (B%C))%C의 값 출력하기
+        System.out.println((A*B)%C); // (A*B)%C의 값 출력하기
+        System.out.println(((A%C) * (B%C))%C); // ((A%C) * (B%C))%C의 값 출력하기
     }
 }

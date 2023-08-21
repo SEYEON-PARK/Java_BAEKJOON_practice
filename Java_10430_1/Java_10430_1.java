@@ -15,7 +15,7 @@ class Main{ // Main 클래스
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
         
         int A = s.nextInt(); // 사용자로부터 정수 입력받기
-        int B = s.nextInt();
+        int B = s.nextInt(); // 사용자로부터 정수 입력받기
         int C = s.nextInt();
         
         System.out.println((A+B)%C);

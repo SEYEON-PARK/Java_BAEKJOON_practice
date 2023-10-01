@@ -5,3 +5,14 @@
 
 첫째 줄에 입력으로 주어진 단어의 길이를 출력한다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+        String s = new String();
+        s = scan.next();
+        System.out.println(s.length());
+    }
+}

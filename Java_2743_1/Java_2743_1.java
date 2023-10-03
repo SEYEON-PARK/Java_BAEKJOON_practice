@@ -6,9 +6,9 @@
 첫째 줄에 입력으로 주어진 단어의 길이를 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
+class Main{ // Main 클래스
     public static void main(String args[]){
         Scanner scan = new Scanner(System.in);
         String s = new String();

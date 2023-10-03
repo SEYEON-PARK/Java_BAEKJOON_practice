@@ -9,9 +9,9 @@
 import java.util.*; // 스캐너를 사용하기 위해
 
 class Main{ // Main 클래스
-    public static void main(String args[]){
-        Scanner scan = new Scanner(System.in);
-        String s = new String();
+    public static void main(String args[]){ // main 메소드
+        Scanner scan = new Scanner(System.in); // 스캐너 scan 생성
+        String s = new String(); // String 객체 s 생성
         s = scan.next();
         System.out.println(s.length());
     }

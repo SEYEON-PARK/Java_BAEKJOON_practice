@@ -12,7 +12,7 @@ class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner scan = new Scanner(System.in); // 스캐너 scan 생성
         String s = new String(); // String 객체 s 생성
-        s = scan.next();
-        System.out.println(s.length());
+        s = scan.next(); // 사용자로부터 문자열 입력받기
+        System.out.println(s.length()); // 문자열의 길이 출력하기
     }
 }

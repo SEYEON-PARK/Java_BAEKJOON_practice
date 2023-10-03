@@ -6,3 +6,22 @@
 
 각 테스트 케이스마다 A+B를 출력한다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+        while(true){
+            try{
+                int A = scan.nextInt();
+                int B = scan.nextInt();
+                
+                System.out.println(A+B);
+            }
+            catch(Exception e){
+                break;
+            }
+        }
+    }
+}

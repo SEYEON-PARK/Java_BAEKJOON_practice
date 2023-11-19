@@ -5,3 +5,19 @@
 
 첫째 줄에 N!을 출력한다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String argv[]){
+        Scanner s = new Scanner(System.in);
+        int N = s.nextInt();
+        long result=1;
+        
+        for(int i=2;i<=N;i++){
+            result*=i;
+        }
+        
+        System.out.println(result);
+    }
+}

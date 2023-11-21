@@ -6,10 +6,10 @@
 첫째 줄에 N!을 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String argv[]){
+class Main{ // Main 클래스
+    public static void main(String argv[]){ // main 메소드
         Scanner s = new Scanner(System.in);
         int N = s.nextInt();
         long result=1;

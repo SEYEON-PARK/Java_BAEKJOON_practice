@@ -14,10 +14,10 @@ class Main{ // Main 클래스
         int N = s.nextInt(); // 사용자로부터 정수 입력받기
         long result=1; // 결과를 저장할 변수 result 선언 및 초기화(long형으로 정의해야 함)
         
-        for(int i=2;i<=N;i++){
-            result*=i;
+        for(int i=2;i<=N;i++){ // i가 2부터 N보다 작거나 같을 때까지 i를 1씩 더하며 반복
+            result*=i; // result에 result*i의 값 대입하기
         }
         
-        System.out.println(result);
+        System.out.println(result); // 결과 출력하기
     }
 }

@@ -5,3 +5,20 @@
 
 첫째 줄에 N!을 출력한다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String argv[]){
+        Scanner s = new Scanner(System.in);
+        int N = s.nextInt();
+        System.out.println(fac(N));
+    }
+    
+    public static long fac(int n){
+        if(n<=1)
+            return 1;
+        else
+            return n * fac(n-1);
+    }
+}

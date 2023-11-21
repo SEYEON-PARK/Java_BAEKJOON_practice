@@ -10,9 +10,9 @@ import java.util.*; // 스캐너를 사용하기 위해
 
 class Main{ // Main 클래스
     public static void main(String argv[]){ // main 메소드
-        Scanner s = new Scanner(System.in);
-        int N = s.nextInt();
-        long result=1;
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int N = s.nextInt(); // 사용자로부터 정수 입력받기
+        long result=1; // 결과를 저장할 변수 result 선언 및 초기화(long형으로 정의해야 함)
         
         for(int i=2;i<=N;i++){
             result*=i;

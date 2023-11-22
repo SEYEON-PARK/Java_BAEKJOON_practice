@@ -19,6 +19,6 @@ class Main{ // Main 클래스
         if(n<=1) // 만약, n이 1보다 작거나 같다면
             return 1; // 1 반환하기
         else // n이 1보다 작거나 같지 않다면(크다면)
-            return n * fac(n-1); // n * fac(n-1)의 값 대입하기
+            return n * fac(n-1); // n * fac(n-1)의 값 반환하기
     }
 }

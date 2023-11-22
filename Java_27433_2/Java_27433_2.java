@@ -10,9 +10,9 @@ import java.util.*; // 스캐너를 사용하기 위해
 
 class Main{ // Main 클래스
     public static void main(String argv[]){ // main 메소드
-        Scanner s = new Scanner(System.in);
-        int N = s.nextInt();
-        System.out.println(fac(N));
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int N = s.nextInt(); // 사용자로부터 정수 입력받기
+        System.out.println(fac(N)); // 결과(fac(N)의 리턴값) 출력하기
     }
     
     public static long fac(int n){

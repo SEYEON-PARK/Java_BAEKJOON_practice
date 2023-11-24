@@ -15,14 +15,14 @@ class Main{ // Main 클래스
         
         if(score>=90) // 만약, score가 90보다 크거나 같다면
             System.out.println("A"); // "A" 출력하기
-        else if(score>=80)
-            System.out.println("B");
-        else if(score>=70)
-            System.out.println("C");
-        else if(score>=60)
-            System.out.println("D");
-        else
-            System.out.println("F");
+        else if(score>=80) // 만약, score가 90보다 작고, 80보다 크거나 같다면 
+            System.out.println("B"); // "B" 출력하기
+        else if(score>=70) // 만약, score가 80보다 작고, 70보다 크거나 같다면 
+            System.out.println("C"); // "C" 출력하기
+        else if(score>=60) // 만약, score가 70보다 작고, 60보다 크거나 같다면 
+            System.out.println("D"); // "D" 출력하기
+        else  // score가 60보다 작다면
+            System.out.println("F"); // "F" 출력하기
         
     }
 }

@@ -14,7 +14,7 @@ class Main{ // Main 클래스
         int score = s.nextInt(); // 사용자로부터 정수 입력받기
         
         if(score>=90) // 만약, score가 90보다 크거나 같다면
-            System.out.println("A");
+            System.out.println("A"); // "A" 출력하기
         else if(score>=80)
             System.out.println("B");
         else if(score>=70)

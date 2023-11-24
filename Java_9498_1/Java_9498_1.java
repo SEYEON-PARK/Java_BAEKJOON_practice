@@ -6,14 +6,14 @@
 시험 성적을 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String arg[]){
-        Scanner s = new Scanner(System.in);
-        int score = s.nextInt();
+class Main{ // Main 클래스
+    public static void main(String arg[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int score = s.nextInt(); // 사용자로부터 정수 입력받기
         
-        if(score>=90)
+        if(score>=90) // 만약, score가 90보다 크거나 같다면
             System.out.println("A");
         else if(score>=80)
             System.out.println("B");

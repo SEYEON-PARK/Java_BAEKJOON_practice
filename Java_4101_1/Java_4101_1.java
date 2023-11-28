@@ -15,14 +15,14 @@ class Main{ // Main 클래스
         int A = s.nextInt(); // 사용자로부터 정수 입력받기
         int B = s.nextInt(); // 사용자로부터 정수 입력받기
         
-        while(A!=0 && B!=0){ // 만약 A가 0이 아니고, B도 0이 아니라면
-            if(A>B)
-                System.out.println("Yes");
-            else
-                System.out.println("No");
+        while(A!=0 && B!=0){ // A가 0이 아니고, B도 0이 아니라면 계속 반복
+            if(A>B) // 만약, A가 B보다 크다면
+                System.out.println("Yes"); // "Yes" 출력하기
+            else // A가 B보다 크지 않다면(작거나 같다면)
+                System.out.println("No"); // "No" 출력하기
             
-            A = s.nextInt();
-            B = s.nextInt();
+            A = s.nextInt(); // 사용자로부터 정수 입력받기
+            B = s.nextInt(); // 사용자로부터 정수 입력받기
         }
     }
 }

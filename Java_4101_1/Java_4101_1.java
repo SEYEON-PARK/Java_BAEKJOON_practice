@@ -11,11 +11,11 @@ import java.util.*; // 스캐너를 사용하기 위해
 
 class Main{ // Main 클래스
     public static void main(String [] arg){ // main 메소드
-        Scanner s = new Scanner(System.in);
-        int A = s.nextInt();
-        int B = s.nextInt();
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int A = s.nextInt(); // 사용자로부터 정수 입력받기
+        int B = s.nextInt(); // 사용자로부터 정수 입력받기
         
-        while(A!=0 && B!=0){
+        while(A!=0 && B!=0){ // 만약 A가 0이 아니고, B도 0이 아니라면
             if(A>B)
                 System.out.println("Yes");
             else

@@ -17,11 +17,11 @@ class Main{ // Main 클래스
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
         
         int h = s.nextInt(); // 사용자로부터 정수 입력받기
-        int m = s.nextInt();
-        int plus = s.nextInt();
+        int m = s.nextInt(); // 사용자로부터 정수 입력받기
+        int plus = s.nextInt(); // 사용자로부터 정수 입력받기
         
-        h+=(int)(plus/60);
-        m+=plus%60;
+        h+=(int)(plus/60); // h에 h+(plus를 60으로 나눴을 때의 몫) 값 대입하기!
+        m+=plus%60; // m에 m+(plus를 60으로 나눴을 때의 나머지) 값 대입하기!
         
         if(m>=60)
         {

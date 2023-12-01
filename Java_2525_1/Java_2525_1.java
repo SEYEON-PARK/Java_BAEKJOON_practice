@@ -10,13 +10,13 @@ KOI 전자에서는 건강에 좋고 맛있는 훈제오리구이 요리를 간�
 첫째 줄에 종료되는 시각의 시와 분을 공백을 사이에 두고 출력한다. (단, 시는 0부터 23까지의 정수, 분은 0부터 59까지의 정수이다. 디지털 시계는 23시 59분에서 1분이 지나면 0시 0분이 된다.)
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String arg[]){
-        Scanner s = new Scanner(System.in);
+class Main{ // Main 클래스
+    public static void main(String arg[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
         
-        int h = s.nextInt();
+        int h = s.nextInt(); // 사용자로부터 정수 입력받기
         int m = s.nextInt();
         int plus = s.nextInt();
         

@@ -22,9 +22,9 @@ class Main{ // Main 클래스
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
         int n = s.nextInt(); // 사용자로부터 정수 입력받기!
         
-        System.out.println(n);
-        System.out.println("1");
+        System.out.println(n); // n의 값 출력하기!
+        System.out.println("1"); // "1" 출력하기!
         
-        s.close();
+        s.close(); // 스캐너 s 종료하기!
     }
 }

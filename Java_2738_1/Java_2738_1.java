@@ -6,3 +6,37 @@ N과 M은 100보다 작거나 같고, 행렬의 원소는 절댓값이 100보다
 
 첫째 줄부터 N개의 줄에 행렬 A와 B를 더한 행렬을 출력한다. 행렬의 각 원소는 공백으로 구분한다.
 */
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String arg[]){
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        int b = s.nextInt();
+        
+        int A[][] = new int[a][b];
+        int B[][] = new int[a][b];
+        
+        for(int i=0;i<a;i++){
+            for(int j=0;j<b;j++){
+                A[i][j] = s.nextInt();
+            }
+        }
+        
+        for(int i=0;i<a;i++){
+            for(int j=0;j<b;j++){
+                B[i][j] = s.nextInt();
+            }
+        }
+        
+        for(int i=0;i<a;i++){
+            for(int j=0;j<b;j++){
+                System.out.print(A[i][j]+B[i][j]+" ");
+            }
+            System.out.println();
+        }
+        
+        s.close();
+    }
+}

@@ -7,16 +7,16 @@ N과 M은 100보다 작거나 같고, 행렬의 원소는 절댓값이 100보다
 첫째 줄부터 N개의 줄에 행렬 A와 B를 더한 행렬을 출력한다. 행렬의 각 원소는 공백으로 구분한다.
 */
 
-import java.util.Scanner;
+import java.util.Scanner; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String arg[]){
-        Scanner s = new Scanner(System.in);
-        int a = s.nextInt();
-        int b = s.nextInt();
+class Main{ // Main 클래스
+    public static void main(String arg[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int a = s.nextInt(); // 사용자로부터 정수 입력받기
+        int b = s.nextInt(); // 사용자로부터 정수 입력받기
         
-        int A[][] = new int[a][b];
-        int B[][] = new int[a][b];
+        int A[][] = new int[a][b]; // 2차원 배열 A 생성
+        int B[][] = new int[a][b]; // 2차원 배열 B 생성
         
         for(int i=0;i<a;i++){
             for(int j=0;j<b;j++){

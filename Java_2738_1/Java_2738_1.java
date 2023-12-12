@@ -16,27 +16,27 @@ class Main{ // Main 클래스
         int b = s.nextInt(); // 사용자로부터 정수 입력받기
         
         int A[][] = new int[a][b]; // 2차원 배열 A 생성(a * b 크기)
-        int B[][] = new int[a][b]; // 2차원 배열 B 생성
+        int B[][] = new int[a][b]; // 2차원 배열 B 생성(a * b 크기)
         
-        for(int i=0;i<a;i++){
-            for(int j=0;j<b;j++){
-                A[i][j] = s.nextInt();
+        for(int i=0;i<a;i++){ // 0부터 a보다 작을 때까지 1씩 증가시킨 값을 i에 대입하며 반복
+            for(int j=0;j<b;j++){ // 0부터 b보다 작을 때까지 1씩 증가시킨 값을 j에 대입하며 반복
+                A[i][j] = s.nextInt(); // 사용자로부터 정수 입력받아 A[i][j]에 대입하기
             }
         }
         
-        for(int i=0;i<a;i++){
-            for(int j=0;j<b;j++){
-                B[i][j] = s.nextInt();
+        for(int i=0;i<a;i++){ // 0부터 a보다 작을 때까지 1씩 증가시킨 값을 i에 대입하며 반복
+            for(int j=0;j<b;j++){ // 0부터 b보다 작을 때까지 1씩 증가시킨 값을 j에 대입하며 반복
+                B[i][j] = s.nextInt(); // 사용자로부터 정수 입력받아 B[i][j]에 대입하기
             }
         }
         
-        for(int i=0;i<a;i++){
-            for(int j=0;j<b;j++){
-                System.out.print(A[i][j]+B[i][j]+" ");
+        for(int i=0;i<a;i++){ // 0부터 a보다 작을 때까지 1씩 증가시킨 값을 i에 대입하며 반복
+            for(int j=0;j<b;j++){ // 0부터 b보다 작을 때까지 1씩 증가시킨 값을 j에 대입하며 반복
+                System.out.print(A[i][j]+B[i][j]+" "); // 결과 출력하기
             }
-            System.out.println();
+            System.out.println(); // 한 행마다 한 줄 띄어주기
         }
         
-        s.close();
+        s.close(); // 스캐너 s 닫기
     }
 }

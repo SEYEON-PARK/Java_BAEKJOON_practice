@@ -15,7 +15,7 @@ class Main{ // Main 클래스
         int a = s.nextInt(); // 사용자로부터 정수 입력받기
         int b = s.nextInt(); // 사용자로부터 정수 입력받기
         
-        int A[][] = new int[a][b]; // 2차원 배열 A 생성
+        int A[][] = new int[a][b]; // 2차원 배열 A 생성(a * b 크기)
         int B[][] = new int[a][b]; // 2차원 배열 B 생성
         
         for(int i=0;i<a;i++){

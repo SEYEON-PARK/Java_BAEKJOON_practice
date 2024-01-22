@@ -16,8 +16,8 @@ import java.util.Scanner;
 
 class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
-        Scanner s = new Scanner(System.in);
-        int N = s.nextInt();
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int N = s.nextInt(); // 사용자로부터 정수 입력받기
         
         System.out.print((int)(N*0.78)+ " ");
         System.out.print((int)(N*0.8) + (int)(N*0.2*0.78));

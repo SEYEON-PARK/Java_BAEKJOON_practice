@@ -12,16 +12,17 @@
 1번 경우에 대한 답과 2번 경우에 대한 답을 사이에 공백을 두고 출력한다.
 */
 
-import java.util.Scanner;
+import java.util.Scanner; // 스캐너를 사용하기 위해
 
 class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
         int N = s.nextInt(); // 사용자로부터 정수 입력받기
-        
+
+        // 결과 출력하기
         System.out.print((int)(N*0.78)+ " ");
         System.out.print((int)(N*0.8) + (int)(N*0.2*0.78));
         
-        s.close();
+        s.close(); // 스캐너 종료하기
     }
 }

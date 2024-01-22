@@ -11,3 +11,17 @@
 
 1번 경우에 대한 답과 2번 경우에 대한 답을 사이에 공백을 두고 출력한다.
 */
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int N = s.nextInt();
+        
+        System.out.print((int)(N*0.78)+ " ");
+        System.out.print((int)(N*0.8) + (int)(N*0.2*0.78));
+        
+        s.close();
+    }
+}

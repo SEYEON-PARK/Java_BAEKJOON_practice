@@ -14,8 +14,8 @@
 
 import java.util.Scanner;
 
-class Main{
-    public static void main(String args[]){
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
         Scanner s = new Scanner(System.in);
         int N = s.nextInt();
         

@@ -8,16 +8,16 @@
 첫째 줄에 ascending, descending, mixed 중 하나를 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner s = new Scanner(System.in);
-        int num[] = new int[8];
-        int status = 0;
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int num[] = new int[8]; // 배열 num 선언
+        int status = 0; // 상황을 저장할 변수 status 선언 및 초기화
         
-        for(int i=0;i<8;i++){
-            num[i]=s.nextInt();
+        for(int i=0;i<8;i++){ // i가 0부터 8이 되기 전까지 1씩 증가시키며 반복
+            num[i]=s.nextInt(); // 사용자로부터 정수를 입력받아 num[i]에 저장
         }
         
         for(int i=0;i<8;i++){

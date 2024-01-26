@@ -8,15 +8,15 @@
 첫째 줄에 ascending, descending, mixed 중 하나를 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner s = new Scanner(System.in);
-        int num[] = new int[8];
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int num[] = new int[8]; // 배열 num 선언
         int ascending[] = {1, 2, 3, 4, 5, 6, 7, 8};
         int descending[] = {8, 7, 6, 5, 4, 3, 2, 1};
-        int status = 0;
+        int status = 0; // 상황을 저장할 변수 status 선언 및 초기화
         
         for(int i=0;i<8;i++){
             num[i]=s.nextInt();

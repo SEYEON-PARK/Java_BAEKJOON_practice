@@ -15,7 +15,7 @@ class Main{ // Main 클래스
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
         int num[] = new int[8]; // 배열 num 선언
         int ascending[] = {1, 2, 3, 4, 5, 6, 7, 8}; // 오름차순 배열 선언 및 초기화
-        int descending[] = {8, 7, 6, 5, 4, 3, 2, 1}; // 내림차순 배열 선언 및 초기
+        int descending[] = {8, 7, 6, 5, 4, 3, 2, 1}; // 내림차순 배열 선언 및 초기화
         int status = 0; // 상황을 저장할 변수 status 선언 및 초기화
         
         for(int i=0;i<8;i++){ // i가 0부터 8이 되기 전까지 1씩 증가시키며 반복
@@ -45,7 +45,7 @@ class Main{ // Main 클래스
                     System.out.println("descending"); // "descending" 출력하기
                 continue; // 계속하기
             }
-            else{ // 만약 num[i]가 ascending[i]와 같지 않고, descending[i]와도 같지 않다면
+            else{ // num[i]가 ascending[i]와 같지 않고, descending[i]와도 같지 않다면
                 System.out.println("mixed"); // "mixed" 출력하기
                 break; // 반복문 빠져 나가기
             }

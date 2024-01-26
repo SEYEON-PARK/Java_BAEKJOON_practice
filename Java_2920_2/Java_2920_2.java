@@ -14,28 +14,28 @@ class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
         int num[] = new int[8]; // 배열 num 선언
-        int ascending[] = {1, 2, 3, 4, 5, 6, 7, 8};
-        int descending[] = {8, 7, 6, 5, 4, 3, 2, 1};
+        int ascending[] = {1, 2, 3, 4, 5, 6, 7, 8}; // 오름차순 배열 선언 및 초기화
+        int descending[] = {8, 7, 6, 5, 4, 3, 2, 1}; // 내림차순 배열 선언 및 초기
         int status = 0; // 상황을 저장할 변수 status 선언 및 초기화
         
-        for(int i=0;i<8;i++){
-            num[i]=s.nextInt();
+        for(int i=0;i<8;i++){ // i가 0부터 8이 되기 전까지 1씩 증가시키며 반복
+            num[i]=s.nextInt(); // 사용자로부터 정수를 입력받아 num[i]에 저장
         }
         
-        for(int i=0;i<8;i++){
-            if(num[i]==ascending[i]){
-                if(i==0)
-                    status = 1;    
-                if(status != 1){
-                    System.out.println("mixed");
-                    break;
+        for(int i=0;i<8;i++){ // i가 0부터 8이 되기 전까지 1씩 증가시키며 반복
+            if(num[i]==ascending[i]){ // 만약, num[i]가 ascending[i]와 같다면
+                if(i==0) // 만약, i가 0이라면(첫 번째 숫자라면)
+                    status = 1; // status에 1 대입하기(오름차순의 가능성이 있음을 표시)
+                if(status != 1){ // 만약, status가 1이 아니라면(첫 시작이 오름차순으로 시작되지 않았고, 다른 숫자로 시작되었다는 의미) 
+                    System.out.println("mixed"); // "mixed" 출력하기
+                    break; // 반복문 빠져 나가기
                 }
-                if(i==7)
-                    System.out.println("ascending");
-                continue;
+                if(i==7) // 만약, i가 7이라면(마지막 숫자라면)
+                    System.out.println("ascending"); // "ascending" 출력하기
+                continue; // 계속하기
             }
-            else if(num[i]==descending[i]){
-                if(i==0)
+            else if(num[i]==descending[i]){ // 만약 num[i]가 ascending[i]와 같지 않고, descending[i]와 같다면
+                if(i==0) // 만약, i가 0이라면(첫 번째 숫자라면)
                     status = 2;    
                 if(status != 2){
                     System.out.println("mixed");

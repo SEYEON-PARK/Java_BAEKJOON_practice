@@ -18,14 +18,14 @@ import java.util.Scanner; // 스캐너를 사용하기 위해
 class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
-        int a, b;
+        int a, b; // 변수 선언
         
-        while(true){
-            a = s.nextInt();
-            b = s.nextInt();
+        while(true){ // 무한 반복
+            a = s.nextInt(); // 사용자로부터 정수 입력받기
+            b = s.nextInt(); // 사용자로부터 정수 입력받기
             
-            if(a == 0 && b == 0)
-                break;
+            if(a == 0 && b == 0) // 만약, a가 0이고 b도 0이라면
+                break; // 반복문 빠져 나가기
             
             if(a % b == 0)
                 System.out.println("multiple");

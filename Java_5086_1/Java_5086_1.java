@@ -27,14 +27,14 @@ class Main{ // Main 클래스
             if(a == 0 && b == 0) // 만약, a가 0이고 b도 0이라면
                 break; // 반복문 빠져 나가기
             
-            if(a % b == 0)
-                System.out.println("multiple");
-            else if(b % a == 0)
-                System.out.println("factor");
-            else
-                System.out.println("neither");
+            if(a % b == 0) // 만약, a % b의 값이 0과 같다면
+                System.out.println("multiple"); // "multiple" 출력하기
+            else if(b % a == 0) // 만약 a % b의 값이 0과 같지 않고, b % a의 값이 0과 같다면
+                System.out.println("factor"); // "factor" 출력하기
+            else // a % b의 값이 0과 같지 않고, b % a의 값도 0과 같지 않다면
+                System.out.println("neither"); // "neither" 출력하기
         }
         
-        s.close();
+        s.close(); // 스캐너 닫기
     }
 }

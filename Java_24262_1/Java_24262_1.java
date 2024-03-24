@@ -13,10 +13,10 @@ MenOfPassion(A[], n) {
 둘째 줄에 코드1의 수행 횟수를 다항식으로 나타내었을 때, 최고차항의 차수를 출력한다. 단, 다항식으로 나타낼 수 없거나 최고차항의 차수가 3보다 크면 4를 출력한다.
 */
 
-import java.util.Scanner;
+import java.util.Scanner; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
         Scanner s = new Scanner(System.in);
         int N = s.nextInt();
         

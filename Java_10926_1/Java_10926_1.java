@@ -6,3 +6,16 @@
 
 첫째 줄에 준하의 놀람을 출력한다. 놀람은 아이디 뒤에 ??!를 붙여서 나타낸다.
 */
+
+import java.util.*;
+
+class Main{
+    public static void main(String [] args){
+        Scanner s = new Scanner(System.in);
+        String name = s.next();
+        
+        System.out.println(name+"??!");
+        
+        s.close();
+    }
+}

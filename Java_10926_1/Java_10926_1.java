@@ -7,10 +7,10 @@
 첫째 줄에 준하의 놀람을 출력한다. 놀람은 아이디 뒤에 ??!를 붙여서 나타낸다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String [] args){
+class Main{ // Main 클래스
+    public static void main(String [] args){ // main 메소드
         Scanner s = new Scanner(System.in);
         String name = s.next();
         

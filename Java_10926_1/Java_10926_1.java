@@ -12,10 +12,10 @@ import java.util.*; // 스캐너를 사용하기 위해
 class Main{ // Main 클래스
     public static void main(String [] args){ // main 메소드
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
-        String name = s.next(); // 사용자로부터 문자열 입력받기
+        String name = s.next(); // 사용자로부터 문자열 입력받기(공백, 탭, 줄 바꿈 전까지)
         
-        System.out.println(name+"??!");
+        System.out.println(name+"??!"); // 결과 출력하기
         
-        s.close();
+        s.close(); // 스캐너 s 닫기
     }
 }

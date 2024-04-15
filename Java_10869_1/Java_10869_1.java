@@ -10,9 +10,9 @@ import java.util.*;
 
 class Main{
     public static void main(String args []){
-        Scanner s = new Scanner(System.in);
-        int A = s.nextInt();
-        int B = s.nextInt();
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int A = s.nextInt(); // 사용자로부터 정수 입력받기
+        int B = s.nextInt(); // 사용자로부터 정수 입력받기
         
         System.out.println(A+B);
         System.out.println(A-B);

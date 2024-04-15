@@ -14,7 +14,7 @@ class Main{
         int A = s.nextInt(); // 사용자로부터 정수 입력받기
         int B = s.nextInt(); // 사용자로부터 정수 입력받기
         
-        System.out.println(A+B);
+        System.out.println(A+B); // 결과 출력하기
         System.out.println(A-B);
         System.out.println(A*B);
         System.out.println(A/B);

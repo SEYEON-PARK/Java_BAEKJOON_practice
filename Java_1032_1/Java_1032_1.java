@@ -12,3 +12,35 @@
 첫째 줄에 패턴을 출력하면 된다.
 */
 
+import java.util.Scanner;
+import java.util.ArrayList;
+
+class Main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        ArrayList<String> list = new ArrayList<>();
+        int num = s.nextInt();
+        s.nextLine();
+        
+        for(int i=0;i<num;i++){
+            list.add(s.nextLine());
+        }
+        
+        for(int i=0;i<list.get(0).length();i++){
+            char compareChar = list.get(0).charAt(i);
+            boolean printChar = true;
+            for(int j=1;j<num;j++){
+                if(list.get(j).charAt(i) != compareChar){
+                    System.out.print('?');
+                    printChar = false;
+                    break;
+                }
+            } 
+            if(printChar) {
+                System.out.print(compareChar);
+            }
+        }
+        
+        s.close();
+    }
+}

@@ -12,15 +12,15 @@
 첫째 줄에 패턴을 출력하면 된다.
 */
 
-import java.util.Scanner;
-import java.util.ArrayList;
+import java.util.Scanner; // 스캐너를 사용하기 위해
+import java.util.ArrayList; // ArrayList를 사용하기 위해
 
 class Main{
     public static void main(String args[]){
-        Scanner s = new Scanner(System.in);
-        ArrayList<String> list = new ArrayList<>();
-        int num = s.nextInt();
-        s.nextLine();
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        ArrayList<String> list = new ArrayList<>(); // String형 ArrayList list 생성
+        int num = s.nextInt(); // 사용자로부터 정수 입력받기
+        s.nextLine(); // 버퍼 비우기!
         
         for(int i=0;i<num;i++){
             list.add(s.nextLine());

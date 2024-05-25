@@ -22,8 +22,8 @@ class Main{
         int num = s.nextInt(); // 사용자로부터 정수 입력받기
         s.nextLine(); // 버퍼 비우기!
         
-        for(int i=0;i<num;i++){
-            list.add(s.nextLine());
+        for(int i=0;i<num;i++){ // i가 0부터 num보다 작을 때까지 1씩 증가시키며 반복
+            list.add(s.nextLine()); // 사용자로부터 문자열 입력받아 list에 추가하기!
         }
         
         for(int i=0;i<list.get(0).length();i++){

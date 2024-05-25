@@ -26,21 +26,21 @@ class Main{
             list.add(s.nextLine()); // 사용자로부터 문자열 입력받아 list에 추가하기!
         }
         
-        for(int i=0;i<list.get(0).length();i++){
-            char compareChar = list.get(0).charAt(i);
-            boolean printChar = true;
-            for(int j=1;j<num;j++){
-                if(list.get(j).charAt(i) != compareChar){
-                    System.out.print('?');
-                    printChar = false;
-                    break;
+        for(int i=0;i<list.get(0).length();i++){ // i가 0부터 list 0번째 요소의 길이보다 작을 때까지 1씩 증가시키며 반복
+            char compareChar = list.get(0).charAt(i); // list 0번째 요소의 i번째 문자를 compareChar에 대입
+            boolean printChar = true; // printChar 변수 선언 및 초기화
+            for(int j=1;j<num;j++){ // j에 1부터 num보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복(0번째 요소는 초기값으로 있으므로 1부터!)
+                if(list.get(j).charAt(i) != compareChar){ // 만약, list j번째 요소의 i번째 문자가 compareChar과 다르다면
+                    System.out.print('?'); // '?' 출력하기
+                    printChar = false; // printChar을 false로 바꾸기
+                    break; // 가장 가까운 반복문 빠져 나가기!
                 }
             } 
-            if(printChar) {
-                System.out.print(compareChar);
+            if(printChar) { // 만약, printChar이 true라면
+                System.out.print(compareChar); // compareChar 출력하기
             }
         }
         
-        s.close();
+        s.close(); // 스캐너 s 닫기
     }
 }

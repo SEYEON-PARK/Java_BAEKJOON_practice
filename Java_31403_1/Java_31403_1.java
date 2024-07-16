@@ -11,26 +11,26 @@ A, B, C를 각각 수와 문자열로 생각했을 때 A+B-C를 출력하세요.
 둘째 줄에는 A, B, C를 문자열로 생각했을 때, A+B-C를 출력하세요.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner s = new Scanner(System.in);
-        int A, B, C;
-        A = s.nextInt();
-        B = s.nextInt();
-        C = s.nextInt();
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int A, B, C; // 변수 선언 
+        A = s.nextInt(); // 사용자로부터 정수 입력받기
+        B = s.nextInt(); // 사용자로부터 정수 입력받기
+        C = s.nextInt(); // 사용자로부터 정수 입력받기
         
-        System.out.println(A+B-C);
+        System.out.println(A+B-C); // 정수로 봤을 때 결과 출력하기
         
-        if (B < 10)
-            System.out.println(A*10+B-C);
-        else if (B < 100)
-            System.out.println(A*100+B-C);
-        else if (B < 1000)
-            System.out.println(A*1000+B-C);
-        else
-            System.out.println(A*10000+B-C);
+        if (B < 10) // 만약, B가 10보다 작다면
+            System.out.println(A*10+B-C); // 문자열로 생각했을 때 결과 출력하기
+        else if (B < 100) // 만약, 10 <= B <100이라면
+            System.out.println(A*100+B-C); // 문자열로 생각했을 때 결과 출력하기
+        else if (B < 1000) // 만약, 100 <= B <1000이라면
+            System.out.println(A*1000+B-C); // 문자열로 생각했을 때 결과 출력하기
+        else // 만약, 1000 <= B이라면
+            System.out.println(A*10000+B-C); // 문자열로 생각했을 때 결과 출력하기
         
         s.close();
     }

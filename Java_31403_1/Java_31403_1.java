@@ -32,6 +32,6 @@ class Main{ // Main 클래스
         else // 만약, 1000 <= B이라면
             System.out.println(A*10000+B-C); // 문자열로 생각했을 때 결과 출력하기
         
-        s.close();
+        s.close(); // 스캐너 s 닫기
     }
 }

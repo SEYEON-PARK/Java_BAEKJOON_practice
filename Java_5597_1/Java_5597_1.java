@@ -19,7 +19,7 @@ class Main{ // Main 클래스
         }
         for(int i=1;i<31;i++){ // i에 1부터 31이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
             if(student[i] != 1) // 만약, student[i]가 1과 다르다면(사용자가 입력한 값이 아니라면)
-                System.out.println(i); // 출력하기
+                System.out.println(i); // i 출력하기
         }
         
         s.close(); // 스캐너 s 닫기

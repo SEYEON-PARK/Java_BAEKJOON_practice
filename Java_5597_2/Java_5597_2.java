@@ -7,21 +7,21 @@ X대학 M교수님은 프로그래밍 수업을 맡고 있다. 교실엔 학생�
 출력은 2줄이다. 1번째 줄엔 제출하지 않은 학생의 출석번호 중 가장 작은 것을 출력하고, 2번째 줄에선 그 다음 출석번호를 출력한다.
 */
 
-import java.util.Scanner;
+import java.util.Scanner; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner s = new Scanner(System.in);
-        int student[] = new int[31];
-        for(int i=0;i<28;i++){
-            int a = s.nextInt();
-            student[a] = 1;
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int student[] = new int[31]; // 제출한 학생 번호를 체크할 배열 student 생성(각각의 요소들은 자동으로 0으로 초기화된다.)
+        for(int i=0;i<28;i++){ // i에 0부터 28이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+            int a = s.nextInt(); // 사용자로부터 정수(제출자 출석번호) 입력받기
+            student[a] = 1; // 해당 정수 인덱스의 student 요소를 1로 바꾸기
         }
-        for(int i=1;i<31;i++){
-            if(student[i] == 0)
-                System.out.println(i);
+        for(int i=1;i<31;i++){ // i에 1부터 31이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+            if(student[i] == 0) // 만약, student[i]가 0이라면(초기화된 상태 그대로라면)
+                System.out.println(i); // i 출력하기
         }
         
-        s.close();
+        s.close(); // 스캐너 s 닫기
     }
 }

@@ -6,17 +6,17 @@
 A+B+C의 값을 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner s = new Scanner(System.in);
-        long a = s.nextLong();
-        long b = s.nextLong();
-        long c = s.nextLong();
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        long a = s.nextLong(); // 사용자로부터 정수 입력받기
+        long b = s.nextLong(); // 사용자로부터 정수 입력받기
+        long c = s.nextLong(); // 사용자로부터 정수 입력받기 
         
-        System.out.println(a+b+c);
+        System.out.println(a+b+c); // 결과 출력하기
         
-        s.close();
+        s.close(); // 스캐너 s 닫기
     }
 }

@@ -18,14 +18,14 @@ MenOfPassion(A[], n) {
 
 import java.util.*;
 
-class Main{
-    public static void main(String args[]){
-        Scanner s = new Scanner(System.in);
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
         
-        long n = s.nextLong();
-        System.out.println(n*n);
-        System.out.println('2');
+        long n = s.nextLong(); // 사용자로부터 정수 입력받기!
+        System.out.println(n*n); // 결과(코드1의 수행 횟수) 출력하기!
+        System.out.println('2'); // 결과(최고차항의 차수) 출력하기!
         
-        s.close();
+        s.close(); // 스캐너 s 닫기!
     }
 }

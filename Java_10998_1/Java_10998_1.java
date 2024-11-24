@@ -6,10 +6,10 @@
 첫째 줄에 A×B를 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 
         Scanner s = new Scanner(System.in);
         int a = s.nextInt();
         int b = s.nextInt();

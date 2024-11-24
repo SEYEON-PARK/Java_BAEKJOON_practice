@@ -9,13 +9,13 @@
 import java.util.*; // 스캐너를 사용하기 위해
 
 class Main{ // Main 클래스
-    public static void main(String args[]){ // main 
-        Scanner s = new Scanner(System.in);
-        int a = s.nextInt();
-        int b = s.nextInt();
+    public static void main(String args[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int a = s.nextInt(); // 사용자로부터 정수 입력받기
+        int b = s.nextInt(); // 사용자로부터 정수 입력받기
         
-        System.out.println(a*b);
+        System.out.println(a*b); // 결과(a*b) 출력하기
         
-        s.close();
+        s.close(); // 스캐너 s 닫기
     }
 }

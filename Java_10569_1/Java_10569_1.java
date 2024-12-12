@@ -8,21 +8,21 @@
 각 V와 E에 대해 볼록다면체의 면의 수를 한 줄에 하나씩 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args []){
-        Scanner s = new Scanner(System.in);
-        int N = s.nextInt();
+class Main{ // Main 클래스
+    public static void main(String args []){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
+        int N = s.nextInt(); // 사용자로부터 정수 입력받기
         
-        for(int i=0;i<N;i++){
-            int V = s.nextInt();
-            int E = s.nextInt();
+        for(int i=0;i<N;i++){ // i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+            int V = s.nextInt(); // 정수 입력받기
+            int E = s.nextInt(); // 정수 입력받기
             
-            System.out.println(E-V+2);
+            System.out.println(E-V+2); // 결과 출력하기
         }
         
         
-        s.close();
+        s.close(); // 스캐너 s 닫기
     }
 }

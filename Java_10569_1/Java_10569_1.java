@@ -13,13 +13,13 @@ import java.util.*; // 스캐너를 사용하기 위해
 class Main{ // Main 클래스
     public static void main(String args []){ // main 메소드
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
-        int N = s.nextInt(); // 사용자로부터 정수 입력받기
+        int N = s.nextInt(); // 사용자로부터 정수(반복 횟수) 입력받기
         
         for(int i=0;i<N;i++){ // i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
-            int V = s.nextInt(); // 정수 입력받기
-            int E = s.nextInt(); // 정수 입력받기
+            int V = s.nextInt(); // 정수(꼭짓점의 개수) 입력받기
+            int E = s.nextInt(); // 정수(모서리의 개수) 입력받기
             
-            System.out.println(E-V+2); // 결과 출력하기
+            System.out.println(E-V+2); // 결과(면의 수) 출력하기
         }
         
         

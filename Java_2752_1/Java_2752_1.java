@@ -8,11 +8,11 @@
 제일 작은 수, 그 다음 수, 제일 큰 수를 차례대로 출력한다.
 */
 
-import java.util.*;
+import java.util.*; // 스캐너를 사용하기 위해
 
-class Main{
-    public static void main(String args[]){
-        Scanner s = new Scanner(System.in);
+class Main{ // Main 클래스
+    public static void main(String args[]){ // main 메소드
+        Scanner s = new Scanner(System.in); // 스캐너 s 생성
 
         int a = s.nextInt();
         int b = s.nextInt();

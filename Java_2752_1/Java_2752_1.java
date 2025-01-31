@@ -14,22 +14,22 @@ class Main{ // Main 클래스
     public static void main(String args[]){ // main 메소드
         Scanner s = new Scanner(System.in); // 스캐너 s 생성
 
-        int a = s.nextInt();
-        int b = s.nextInt();
-        int c = s.nextInt();
+        int a = s.nextInt(); // 사용자로부터 정수 입력받기
+        int b = s.nextInt(); // 사용자로부터 정수 입력받기
+        int c = s.nextInt(); // 사용자로부터 정수 입력받기
 
-        if((a < b) && (b < c))
-            System.out.println(a+" "+b+" "+c);
-        else if((a < c) && (c < b))
-            System.out.println(a+" "+c+" "+b);
-        else if((b < a) && (a < c))
-            System.out.println(b+" "+a+" "+c);
-        else if((b < c) && (c < a))
-            System.out.println(b+" "+c+" "+a);
-        else if((c < a) && (a < b))
-            System.out.println(c+" "+a+" "+b);
-        else
-            System.out.println(c+" "+b+" "+a);
+        if((a < b) && (b < c)) // 만약, a < b < c 라면
+            System.out.println(a+" "+b+" "+c); // 결과 출력하기
+        else if((a < c) && (c < b)) // 위의 경우가 아니고, a < c < b 라면
+            System.out.println(a+" "+c+" "+b); // 결과 출력하기
+        else if((b < a) && (a < c)) // 위의 경우가 아니고, b < a < c 라면
+            System.out.println(b+" "+a+" "+c); // 결과 출력하기
+        else if((b < c) && (c < a)) // 위의 경우가 아니고, b < c < a 라면
+            System.out.println(b+" "+c+" "+a); // 결과 출력하기
+        else if((c < a) && (a < b)) // 위의 경우가 아니고, c < a < b 라면
+            System.out.println(c+" "+a+" "+b); // 결과 출력하기
+        else // 위의 경우들이 아니라면(c < b < a 라면)
+            System.out.println(c+" "+b+" "+a); // 결과 출력하기
         
         s.close();
     }

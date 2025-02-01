@@ -31,6 +31,6 @@ class Main{ // Main 클래스
         else // 위의 경우들이 아니라면(c < b < a 라면)
             System.out.println(c+" "+b+" "+a); // 결과 출력하기
         
-        s.close();
+        s.close(); // 스캐너 s 닫기
     }
 }
